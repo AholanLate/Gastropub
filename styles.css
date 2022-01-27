@@ -1,6 +1,7 @@
 body{
     background-size: 100% 100%;
     height: 100vh;
+    background-color: #A9927D;
 }
 
 .container{
@@ -8,7 +9,13 @@ body{
     width: 100%;
     margin: auto;
     font-family:'Bebas Neue', sans-serif;
-    max-width: 1920px;
+    max-width: 1440px;
+}
+
+.middle_container{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
 }
 
 .navibar{
@@ -18,6 +25,9 @@ body{
 #banner{
     width: 100%;
     height: auto;
+}
+h1{
+    color: #F2F4F3;
 }
 h2{
     margin-top: 10%;
@@ -34,9 +44,12 @@ p {
 }
 article, aside, img {
     padding: 0px !important;
+    max-height: 500px;
+    max-width: 500px;
 }
 article{
     text-align: center;
+    background-color: #F2F4F3;
 }
 
 header{
@@ -57,6 +70,7 @@ h5{
 .footer_p{
     text-align: left;
 }
+
 
 @media (pointer: coarse) {
     body{
