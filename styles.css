@@ -7,8 +7,12 @@ body{
     background-color: white;
     width: 100%;
     margin: auto;
-    font-family:'Karla', sans-serif;
+    font-family:'Bebas Neue', sans-serif;
     max-width: 1920px;
+}
+
+.navibar{
+    background-color: rgba(10, 9, 8, 0.75);
 }
 
 #banner{
@@ -36,10 +40,12 @@ article{
 }
 
 header{
-    background-color: lightcoral;
+    background-color: rgba(10, 9, 8, 0.75);;
 }
 footer{
-    background-color: lightcoral;
+    background-color: #49111C;
+    max-height: 250px;
+    color: white;
 }
 
 @media (pointer: coarse) {
