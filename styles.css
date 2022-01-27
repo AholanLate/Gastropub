@@ -45,7 +45,17 @@ header{
 footer{
     background-color: #49111C;
     max-height: 250px;
+    text-align: left;
     color: white;
+}
+h5{
+    max-width: 215px;
+    border-bottom: 1px solid #F2F4F3;
+    text-align:left;
+}
+
+.footer_p{
+    text-align: left;
 }
 
 @media (pointer: coarse) {
