@@ -60,6 +60,7 @@ ul{
 
 li{
     float: right;
+    margin-top: 10px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -67,6 +68,13 @@ li{
 li a{
     display: block;
     min-width: 60px;
+}
+
+li a:hover{
+    border: none;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 
