@@ -5,9 +5,10 @@ body{
 }
 
 .container{
-    background-image: url("images/gastropubheader.jpg");
+    /*background-image: url("images/gastropubheader.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    */
     background-color: white;
     max-width: 1440px;
     min-width: 500px;
@@ -15,7 +16,8 @@ body{
     margin: auto;
     padding: 0 !important;
 }
-.content .row{
+
+.row{
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -31,6 +33,23 @@ body{
     height: 60px;
 }
 
+.sticky-top a{
+    border: 2px solid #f2f4f3;
+    text-decoration: none;
+    size: 14px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 15%;
+    
+
+    color: #f2f4f3;
+    padding: 3px 15px;
+}
+
+.sticky-top a:hover{
+    color: green;
+}
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -39,18 +58,16 @@ ul{
 }
 
 li{
-    float: left;
+    float: right;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 li a{
     display: block;
-    width: 60px;
+    min-width: 60px;
 }
 
-header .row{
-    margin: 0 !important;
-    padding: 0 !important;
-}
 
 .header-image{
     max-width: 1440px;
@@ -62,10 +79,13 @@ header .row{
     padding: 0 !important;
 }
 
+/*
 #logo{
     height: 100%;
     width: 100%;
 }
+
+*/
 
 /*CONTENT*/
 .content{
@@ -109,20 +129,16 @@ p, table{
     padding: 0 !important;
 }
 
-article.col-md-6{
+.col-md-6{
     max-width: 500px !important;
     padding: 0 !important;
 }
 
-aside.col-md-6{
+.col-md-6{
     max-width: 500px !important;
     padding: 0 !important;
 }
 
-.content .row{
-    margin: 0 !important;
-    padding: 0 !important;
-}
 
 .img-fluid {
     width: 100%;
