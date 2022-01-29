@@ -1,6 +1,7 @@
 body{
     background-size: 100% 100%;
     height: 100vh;
+    background-color: #A9927D;
 }
 .container{
     background-color: white;
@@ -9,6 +10,11 @@ body{
     max-width: 1440px;
     padding: 0px;
 }
+.content .row{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 /*NAVBAR / HEADER*/
 .navibar{
     background-color: rgba(10, 9, 8, 0.75);
@@ -33,6 +39,18 @@ h2{
 .tervetuloa{
     text-align: center;
     margin-bottom: 60px;
+    padding: 0px;
+}
+.col-md-12{
+    padding: 0px !important;
+}
+article.col-md-6{
+    padding: 0 !important;
+    max-width: 500px !important;
+}
+aside.col-md-6{
+    padding: 0 !important;
+    max-width: 500px !important;
 }
 .tervetuloa h2{
     margin: auto;
@@ -44,7 +62,7 @@ p{
 .img-fluid {
     width: 100%;
     height: 100%;
-    padding: 0px;
+    padding: none;
 }
 article, aside, img {
     padding: 0px !important;
@@ -86,13 +104,18 @@ footer h5{
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    padding: 0px;
+    padding-top: 60px;
 }
 .yhteystiedot{
     text-align: left;
+    padding: 0px;
+}
+.aukioloajat{
+    padding: 0px;
 }
 .some{
     text-align: right;
+    padding: 0px;
 }
 .some-flex{
     display: flex;
