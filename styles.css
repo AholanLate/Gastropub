@@ -63,7 +63,7 @@ header .row{
 .content{
     max-width: 1000px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 60px;
     padding: 0px;
 }
@@ -184,6 +184,7 @@ footer h2{
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    color: #f2f4f3;
 }
 
 .some{
