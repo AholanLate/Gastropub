@@ -50,7 +50,7 @@ body{
 
 h1{
     font-family: 'Bebas Neue', sans-serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 36px;
 }
 
@@ -129,13 +129,11 @@ footer{
     color: #f2f4f3;
     margin: none;
     width: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
 }
 
 footer h2{
     font-family: 'Bebas Neue', sans-serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 24px;
 /*  Viiva
     max-width: 215px; 
@@ -149,7 +147,7 @@ footer h2{
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    padding: 60px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .yhteystiedot{
@@ -181,7 +179,7 @@ footer h2{
 .some-icon{
     width: 36px;
     height: auto;
-    margin: 5px 0 5px 10px;
+    margin: 0 0 0 10px;
     filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
 }
 
