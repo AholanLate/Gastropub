@@ -169,6 +169,11 @@ footer h2{
     padding: 50px 0 0 0;
 }
 
+footer .col-md-4, footer .col-4{
+    min-width: 215px !important;
+}
+
+
 .yhteystiedot{
     text-align: left;
     padding: 0 !important;
@@ -217,6 +222,10 @@ footer h2{
         width: 500px;
         margin: auto;
     }
+
+    .container{
+        min-width: 500px;
+    }
     
     .tervetuloa{
         margin-top: 0 !important;
@@ -243,15 +252,18 @@ footer h2{
         margin-top: 60px;
     }
 
+    footer .col-4{
+        max-width: 215px;
+    }
+
     .yhteystiedot{
         margin-left: 10%;
     }
-/*
+
     .aukioloajat{
         padding: 0;
-        text-align: right;
+        margin-right: 0;
     }
-
 
     .some{
         text-align: center;
@@ -260,8 +272,9 @@ footer h2{
     }
 
     .some-flex{
-        margin: auto;
         float: none;
+        max-width: 215px;
+        margin-left: 175px;
     }
-*/
+
 }
