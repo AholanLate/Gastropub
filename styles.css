@@ -57,14 +57,15 @@ header{
 }
 footer{
     background-color: #49111C;
-    max-height: 250px;
+    min-height: 250px;
     text-align: left;
-    color: white;
+    color: #F2F4F3;
 }
 h5{
     max-width: 215px;
-    border-bottom: 1px solid #F2F4F3;
+    border-bottom: 2px solid #F2F4F3;
     text-align:left;
+    padding-bottom: 5px;
 }
 
 .footer_p{
@@ -75,13 +76,18 @@ h5{
 
 @media (pointer: coarse) {
     body{
-        background-image: none;
-        background-color: #f5f5f5;
+        background-color: #F2F4F3;
+        
     }
 }
 @media only screen and (max-width: 768px){
     body{
-        background-image: none;
-        background-color: #f5f5f5;
+        background-color: #F2F4F3;
+    }
+    footer{
+        background-color: #49111C;
+        min-height: 250px;
+        text-align: left;
+        color: #00a753;
     }
 }
