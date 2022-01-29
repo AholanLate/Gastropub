@@ -47,7 +47,8 @@ body{
 }
 
 .sticky-top a:hover{
-    color: green;
+    border: none;
+    margin-left: 2px;
 }
 
 ul{
