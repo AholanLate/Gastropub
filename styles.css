@@ -20,7 +20,7 @@ body{
 }
 /*CONTENT*/
 .content{
-    width: 69.44%;
+    max-width: 1000px;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -41,13 +41,15 @@ p{
     font-size: 1.4em;
     font-family: 'Raleway', sans-serif;
 }
-#img-fluid {
+.img-fluid {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 0px;
 }
 article, aside, img {
     padding: 0px !important;
+    max-width: 500px;
+    height: 500px;
 }
 article{
     background-color: #f2f4f3;
@@ -67,8 +69,8 @@ article{
 footer{
     background-color: #49111C;
     min-height: 250px;
-    color: white;
-    margin: auto;
+    color: #f2f4f3;
+    margin: none;
     width: 100%;
 }
 footer p{
@@ -78,10 +80,9 @@ footer h5{
     font-family: 'Bebas Neue', sans-serif;
     text-transform: capitalize;
     font-size: 24px;
-
 }
 .footer-margins{
-    width: 69.44%;
+    width: 1000px;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
