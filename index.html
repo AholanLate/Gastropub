@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+<!--Laurin Branch-->
     <title>Gastropub</title>
     <!--bootsrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,143 +13,141 @@
     <link rel="stylesheet" href="styles.css">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
+
 <!--NAVBAR-->
-    <div class="sticky-top">
+<div class="sticky-top navibar">
 
-        <header class="row p-3 navibar text-center">
-                <nav class="navbar col-2">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                </nav>
-                
-                <h1 class="text-center display-5 col-8">Gastropub</h1>
+    <header class="row p-3 text-center">
+            <nav class="navbar col-2">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
             
-        </header>
+            <h1 class="text-center display-5 fw-light col-8">Gastropub</h1>
+        
+    </header>
 
-        <div class="collapse navibar" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-            </div>
+    <div class="collapse navibar" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+        <h5 class="text-white h4">Collapsed content</h5>
+        <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
+</div>
 
-
-    <div class="row">
-
+<!--HEADER-->
+    <div class="row header-image">
         <article class="col-md-12">
-            <img id="banner" class="img-fluid" src="images/gastropubheader.jpg" alt="Banner">
-        </article>
-        
+            <img class="img-fluid" src="https://microfinanceireland.ie/wp-content/uploads/2016/09/header-image-placeholder-1.gif" alt="Lapland">
+        </article>    
     </div>
-    
-    <div class="middle_container">
-    
-    <div class="row">
 
-        <div class="col-md-12 text-center">
-            <h3>Tervetuloa</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio velit reprehenderit minima sint harum eius debitis nisi cumque pariatur consectetur, amet culpa
-            </p>
+<!--START OF CONTENT-->
+    <div class="content">
+
+<!--TERVETULOA-->
+    <div class="tervetuloa row">
+        <div class="col-md-12">
+            <h2 class="display-6 fw-light">Tervetuloa</h2>
+            <p>Mauris egestas vitae ante luctus mattis. Proin volutpat tortor vitae nisi faucibus, at aliquet tellus porta. Aenean pellentesque pulvinar tortor elementum sodales</p>
         </div>
-        
     </div>
 
-
-    
-<!--FIRST ROW-->
-    <div class="row">
-
-        <aside class="col-md-6">
-            <img class="img-fluid" src="images/menuplatter.jpg" alt="Menu">
-        </aside>
-
-        <article class="col-md-6 float-left">
-            <h2 class="display-6 fw-light">History</h2>
-            <p class="text-start lh-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio velit reprehenderit minima sint harum eius debitis nisi cumque pariatur consectetur, amet culpa magnam asperiores deserunt corrupti sequi maxime quam!
-                Quae at corporis impedit nulla amet ut expedita id suscipit eum necessitatibus,
-            </p>
-
-        </article>
-
-    </div>
-
-<!--SECOND ROW-->
+<!--MENU-->
     <div class="row flex-row-reverse">
 
-        <aside class="col-md-6">
-            <img class="img-fluid" src="images/drinks.jpg" alt="Juomat">
-        </aside>
-
-        <article class="col-md-6 float-left">
-            <h2 class="display-6 fw-light">Menu</h2>
-            <p class="text-start lh-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio velit reprehenderit minima sint harum eius debitis nisi cumque pariatur consectetur, amet culpa magnam asperiores deserunt corrupti sequi maxime quam!
-            Quae at corporis impedit nulla amet ut expedita id suscipit eum necessitatibus,
-            </p>
+        <article class="col-md-6 float-left menu">
+            <div class="textbox">
+                <h2 class="display-6 fw-light">Menu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio velit reprehenderit minima sint harum eius debitis nisi cumque pariatur consectetur, amet culpa magnam asperiores deserunt corrupti sequi maxime quam!
+                </p>
+            </div>
         </article>
+
+        <aside class="col-md-6">
+            <img class="img-fluid" src="https://crystalplazagroup.com/wp-content/uploads/2016/11/placeholder-635x635.jpg" alt="Lapland">
+        </aside>
 
     </div>
 
-<!--THIRD ROW-->
+<!--JUOMAT-->
     <div class="row">
 
-        <aside class="col-md-6">
-            <img class="img-fluid" src="images/pubinterior.jpg" alt="Kuva pubin sisustasta">
-        </aside>
-
-        <article class="col-md-6 float-left">
-            <h2 class="display-6 fw-light">Table reservation</h2>
-            <p class="text-start lh-base">
+        <article class="col-md-6 float-left juomat">
+            <div class="textbox">
+            <h2 class="display-6 fw-light">Juomat</h2>
+            <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio velit reprehenderit minima sint harum eius debitis nisi cumque pariatur consectetur, amet culpa magnam asperiores deserunt corrupti sequi maxime quam!
-            Quae at corporis impedit nulla amet ut expedita id suscipit eum necessitatibus,
             </p>
+            </div>
         </article>
 
-    </div>
+        <aside class="col-md-6">
+            <img class="img-fluid" src="https://crystalplazagroup.com/wp-content/uploads/2016/11/placeholder-635x635.jpg" alt="Lapland">
+        </aside>
     </div>
 
-<!-- Footer -->
-    <footer class="row text-center p-3">
-        <div class="col-4 footer_p">
-            <p>
-            <h5>Yhteystiedot</h5>
-                Imaginary Gastropub<br />
-                Lorem ipsumintie 123<br />
-                12345 Lipsumila<br />
-                (01) 123 4567<br />
-                email@imaginarygastropub.fi
-            </p>
-        </div>
-            
-        <div class="col-4 footer_p">
-            <p>
-            <h5 text-right>Aukioloajat</h5>
-            
-                ma-to 16-23<br />
-                pe-la 16-02<br />
-                su    14-23
-            </p>
-        </div>
-        <div class="col-4 footer_p">
-            <p>
-            <h5>Sosiaalinen media</h5>
-                oujee facebookkia
-            <p>
-        </div>
-    </footer>
+<!--HISTORIA-->
+    <div class="row flex-row-reverse">
 
+        <article class="col-md-6 float-left">
+            <div class="textbox">
+                <h2 class="display-6 fw-light historia">Historia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio velit reprehenderit minima sint harum eius debitis nisi cumque pariatur consectetur, amet culpa magnam asperiores deserunt corrupti sequi maxime quam!
+                </p>
+            </div>
+        </article>
+
+        <aside class="col-md-6">
+            <img class="img-fluid" src="https://crystalplazagroup.com/wp-content/uploads/2016/11/placeholder-635x635.jpg" alt="Lapland">
+        </aside>
+
+    </div>
+
+<!--END OF CONTENT-->
+</div>
+<!--FOOTER-->
+<footer>
+<div class="row text-center p-3 footer-margins">
+
+    <div class="col-4 yhteystiedot">
+        <h5>Yhteystiedot</h5>
+        <p class="text-left">
+            Imaginary Gastropub<br />
+            Lorem ipsumintie 123<br />
+            12345 Lipsumila<br />
+            (01) 123 4567<br />
+            email@imaginarygastropub.fi
+        </p>
+    </div>
+    
+    <div class="col-4 aukioloajat">
+        <h5>Aukioloajat</h5>
+        <p class="text-left">
+            ma-to 16-23<br />
+            pe-la 16-02<br />
+            su    14-23
+        </p>
+    </div>
+
+    <div class="col-4 some">
+        <h5>Sosiaalinen media</h5>
+        <div class="some-flex">
+        <img class="some-icon" src="https://www.iconsdb.com/icons/preview/white/facebook-3-xxl.png">
+        <img class="some-icon" src="https://www.iconsdb.com/icons/preview/white/instagram-xxl.png">
+        <img class="some-icon" src="https://www.iconsdb.com/icons/preview/white/twitter-xxl.png">
+        </div>
+
+</div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </div>
