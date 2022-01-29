@@ -5,6 +5,9 @@ body{
 }
 
 .container{
+    background-image: url("images/gastropubheader.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-color: white;
     max-width: 1440px;
     min-width: 500px;
@@ -57,6 +60,11 @@ header .row{
     margin: auto;
     margin-top: -60px;
     padding: 0 !important;
+}
+
+#logo{
+    height: 100%;
+    width: 100%;
 }
 
 /*CONTENT*/
@@ -268,7 +276,8 @@ footer .col-md-4, footer .col-4{
     .some{
         text-align: center;
         margin: auto;
-        padding: 0;
+        margin-top: 25px;
+        padding: 0 0 10px 0;
     }
 
     .some-flex{
