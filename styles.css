@@ -241,6 +241,7 @@ footer h2{
     .footer-margins{
         width: 500px;
         margin: auto;
+        margin-top: 60px;
     }
 
     .yhteystiedot{
