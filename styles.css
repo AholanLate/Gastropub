@@ -206,6 +206,9 @@ article, aside, img {
 
 article{
     background-color: #f2f4f3;
+}
+
+article h2{
     color:#49111C;
 }
 
