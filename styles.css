@@ -150,7 +150,8 @@ h1, h2{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 36px;
     text-transform: uppercase;
-    color: #0A0908;    display: inline-block;
+    color: #0A0908;    
+    display: inline-block;
     padding-bottom: 5px;
     position: relative;
 }
@@ -160,7 +161,7 @@ h1::after, h2::after{
     position: absolute;
     width: 215px;
     bottom: 0;
-    left: -30%;
+    left: -30%; /* täytyy korjata */
     border-bottom: 1px solid #49111C;
 }
 
@@ -245,6 +246,18 @@ footer h3{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 24px;
     text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+footer h3::after{
+    content: "";
+    position: absolute;
+    width: 215px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #f2f4f3;
 }
 
 footer p, footer table{
@@ -252,8 +265,6 @@ footer p, footer table{
     font-size: 16px;
     line-height: 150%;
     color: #f2f4f3;
-    padding-top: 0; /* täytyy poistaa myöhemmin */
-
 }
 
 .footer-margins{
@@ -280,6 +291,10 @@ footer .col-md-4, footer .col-4{
     padding: 0 !important;
 }
 
+.opening-hours h3::after{
+    left: -65%; /* täytyy korjata */
+}
+
 #opening-hours-table{
     text-align: left;
     margin-left: auto;
@@ -291,9 +306,9 @@ footer .col-md-4, footer .col-4{
     padding: 0 !important;
 }
 
-.some-flex{
-    display: flex;
-    float: right;
+.some h3::after{
+    right: 0;
+    left: auto;
 }
 
 .some-icon{
@@ -303,8 +318,7 @@ footer .col-md-4, footer .col-4{
     filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
 }
 
-
-/*MEDIA*/
+/* Media */
 @media (pointer: coarse) {
     body{
         background-image: none;
@@ -350,6 +364,10 @@ footer .col-md-4, footer .col-4{
         padding: 0 !important;
     }
 
+    footer h3::after{
+        width: 145px;
+    }
+
     .footer-margins{
         width: 500px;
         margin: auto;
@@ -369,16 +387,24 @@ footer .col-md-4, footer .col-4{
         margin-right: 0;
     }
 
+    .opening-hours h3::after{
+        width: 146px;
+        right: 0;
+        left: auto;
+    }
+    
     .some{
         text-align: center;
         margin: 25px auto;
     }
-
-    .some-flex{
-        float: none;
-        width: 215px;
-        margin: auto;
-        padding-left: 35px;
+    
+    .some h3::after{
+        width: 146px;
+        left: -2px; /* täytyy korjata */
+    }
+    
+    .some-icon{
+        margin: 0 5px;
     }
 
 }
