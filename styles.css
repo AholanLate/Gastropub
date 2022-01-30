@@ -34,6 +34,7 @@ body{
     overflow: auto;
 }
 
+
 .navbar-container a{
     border: 2px solid #f2f4f3;
     text-decoration: none;
@@ -45,11 +46,6 @@ body{
     padding: 3px 15px;
 }
 
-.navbar-container a:hover{
-    border: none;
-    margin-left: 2px;
-}
-
 .navbar-top, .navbar-bottom{
     background-color: rgba(10, 9, 8, 0.75);
     height: 60px;
@@ -57,19 +53,17 @@ body{
     padding: 0;
 }
 
-.navbar-top li{
-    float: right;
-    margin: 15px 28px 0 0;
-}
-
 #collapsible-div{
     float: right;
     visibility: hidden;
     margin: 0;
     padding: 0;
-    width: 277px;
+    width: 271px;
     height: 200px;
 }
+
+
+/* Hampurilaisikonin ja linkin asetukset */
 
 #hamburger-icon{
     width: 28px;
@@ -82,19 +76,24 @@ body{
 #hamburger-button{
     border: none;
     width: 28px;
-}
-
-#hamburger-button:hover{
-    margin: 0;
-}
-
-#varaus:hover{
-    border: none;
-    margin: 2px -2px 0 0 !important;
+    padding: 0 !important;  
 }
 
 
-ul{
+
+
+/* varsinaisten linkkien asetuksia  sekä ylä, että alaosasta*/
+
+.navbar-link{
+    display: block;
+    width: 182px;   
+}
+
+.navbar-link:hover{
+    border: 2px solid rgba(10, 9, 8, 0);
+}
+
+.navbar-container ul{
     list-style-type: none;
     list-style: none;
     margin: 0;
@@ -102,19 +101,16 @@ ul{
     overflow: hidden;    
 }
 
-li{
+
+.navbar-top li{
+    float: right;
+    margin: 15px 25px 0 0;
+}
+
+.navbar-bottom li{
     margin: 10px 10px 0 10px;
 }
 
-li a{
-    display: block;
-    width: 182px;
-}
-
-li a:hover{
-    border: none;
-    margin: 2px -2px 2px 2px;
-}
 
 .banner{
     position: relative;
