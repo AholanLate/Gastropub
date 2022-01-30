@@ -8,7 +8,7 @@
         btn.onclick = function() {
 
         //etitään laajennettava div id:n perusteella ja tallennetaan se muuttujaan
-        let vElement = document.getElementById("collapsediv");
+        let vElement = document.getElementById("collapsible-div");
         //Haetaan divin tyylit
         let vStyle = window.getComputedStyle(vElement);
         //Haetaan tyyleistä visibilityn arvo ja tallennetaan se muuttujaan
