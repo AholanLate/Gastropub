@@ -57,12 +57,7 @@ body{
     margin-left: 2px;
 }
 
-/*
-#hamburgerbtn{
-    border: none;
-    outline: none;
-}
-*/
+
 .navbar-top, .navbar-bottom{
     background-color: rgba(10, 9, 8, 0.75);
     height: 60px;
@@ -83,18 +78,21 @@ body{
     padding: 0;
 }
 
-#hamburgericon{
+#hamburger-button{
+    border: none;
+}
+
+
+#hamburger-icon{
     width: 28px;
-    height: auto;
+    height: 28px;
     padding: 0 !important;
     margin: 0 !important;
     filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
 }
 
-.navbar-toggler{
-    padding: 0 !important;
-    margin: 0 !important;
-}
+
+/* navbar vaakataso */
 
 ul{
     list-style-type: none;
@@ -110,6 +108,7 @@ li{
     margin-right: 5px;
     margin-left: 5px;
 }
+
 
 li a{
     display: block;

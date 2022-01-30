@@ -2,7 +2,7 @@
       //Kun koko ikkunan kaikki elementit ovat latautuneet
       window.onload = function() {
         //haetaan nappi id:n perusteella ja tallennetaan se muuttujaan
-        const btn = document.getElementById("hamburgerbtn");
+        const btn = document.getElementById("hamburger-button");
 
         //Jos lnappia painetaan, ajetaan seuraava koodi
         btn.onclick = function() {
