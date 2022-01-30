@@ -25,18 +25,13 @@ body{
 
 /*NAVBAR / HEADER*/
 .navbar-container{
-    height: 120px;
+    height: 260px;
     position: sticky;
     max-width: 1440px;
     top: 0;
-    margin: 0 auto -165px; /* 165 = height + margin-top */
+    margin: 0 auto -305px; /* 165 = height + margin-top */
     z-index: 1;
-}
-
-.navbar-link{
-    float: right;
-    margin: 20px 20px 0 0;
-    min-width: 60px;
+    overflow: auto;
 }
 
 .navbar-container a{
@@ -64,13 +59,17 @@ body{
 
 .navbar-top li{
     float: right;
-    margin: 15px 25px 0 0;
+    margin: 15px 28px 0 0;
 }
 
 #collapsible-div{
+    float: right;
     visibility: hidden;
     margin: 0;
+    margin-right: 77px;
     padding: 0;
+    width: 200px;
+    height: 200px;
 }
 
 #hamburger-icon{
@@ -83,6 +82,7 @@ body{
 
 #hamburger-button{
     border: none;
+    width: 28px;
 }
 
 #hamburger-button:hover{
@@ -91,10 +91,10 @@ body{
 
 #varaus:hover{
     border: none;
-    margin: 2px 2px 0 2px !important;
+    margin: 2px -2px 0 0 !important;
 }
 
-/* navbar vaakataso */
+
 ul{
     list-style-type: none;
     list-style: none;
@@ -110,12 +110,12 @@ li{
 
 li a{
     display: block;
-    min-width: 60px;
+    width: 182px;
 }
 
 li a:hover{
     border: none;
-    margin: 2px 2px 0 2px;
+    margin: 2px -2px 2px 2px;
 }
 
 .banner{
