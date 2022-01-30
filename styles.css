@@ -66,9 +66,8 @@ body{
     float: right;
     visibility: hidden;
     margin: 0;
-    margin-right: 77px;
     padding: 0;
-    width: 200px;
+    width: 277px;
     height: 200px;
 }
 
@@ -104,8 +103,7 @@ ul{
 }
 
 li{
-    float: right;
-    margin: 10px 10px 0 0;
+    margin: 10px 10px 0 10px;
 }
 
 li a{
