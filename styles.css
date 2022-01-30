@@ -23,6 +23,7 @@ body{
     padding: 0 !important;
 }
 
+
 /*NAVBAR / HEADER*/
 .navbar-container{
     height: 260px;
@@ -33,7 +34,6 @@ body{
     z-index: 1;
     overflow: auto;
 }
-
 
 .navbar-container a{
     border: 2px solid #f2f4f3;
@@ -59,7 +59,7 @@ body{
     margin: 0;
     padding: 0;
     width: 271px;
-    height: 200px;
+    height: 175px;
 }
 
 
@@ -78,8 +78,6 @@ body{
     width: 28px;
     padding: 0 !important;  
 }
-
-
 
 
 /* varsinaisten linkkien asetuksia  sekä ylä, että alaosasta*/
@@ -101,7 +99,6 @@ body{
     overflow: hidden;    
 }
 
-
 .navbar-top li{
     float: right;
     margin: 15px 25px 0 0;
@@ -110,7 +107,6 @@ body{
 .navbar-bottom li{
     margin: 10px 10px 0 10px;
 }
-
 
 .banner{
     position: relative;
@@ -136,8 +132,9 @@ body{
     max-width: 300px;
 }
 
+
 /*CONTENT*/
-.content{
+main{
     max-width: 1000px;
     margin: auto;
     margin-top: 0;
@@ -149,7 +146,18 @@ h1, h2{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 36px;
     text-transform: uppercase;
-    color: #0A0908;
+    color: #0A0908;    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+h1::after, h2::after{
+    content: "";
+    position: absolute;
+    width: 215px;
+    bottom: 0;
+    left: -25%;
+    border-bottom: 1px solid #49111C;
 }
 
 .tervetuloa{
@@ -159,16 +167,14 @@ h1, h2{
     padding: 0 3% !important;
 }
 
-.tervetuloa h1{
-    padding-bottom: 10px;
-}
-
 p{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 200%;
     color: #0A0908;
+    padding-top: 10px; /* täytyy poistaa myöhemmin */
 }
+
 
 /*GRID HAX*/
 .col-md-12{
@@ -206,13 +212,23 @@ article h2{
     color:#49111C;
 }
 
+article h2::after{
+    left: 0;
+}
+
 .juomat{
     text-align: right;
+}
+
+article .juomat h2::after{
+    right: 0;
+    left: auto;
 }
 
 .textbox{
     margin: 10%;
 }
+
 
 /*FOOTER*/
 footer{
@@ -227,11 +243,6 @@ footer h3{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 24px;
     text-transform: uppercase;
-/*  Viiva 
-    max-width: 215px; 
-    border-bottom: 2px solid #F2F4F3;
-    padding-bottom: 5px;
-*/
 }
 
 footer p, footer table{
@@ -288,6 +299,7 @@ footer .col-md-4, footer .col-4{
     filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
 }
 
+
 /*MEDIA*/
 @media (pointer: coarse) {
     body{
@@ -318,6 +330,10 @@ footer .col-md-4, footer .col-4{
 
     .juomat{
         text-align: left;
+    }
+
+    article .juomat h2::after{
+        left: 0;
     }
 
     article.col-md-6{
