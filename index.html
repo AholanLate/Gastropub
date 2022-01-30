@@ -21,22 +21,24 @@
   <div class="container">
     
     <!--NAVBAR-->
-    <div class="sticky-navbar">
-      <div class="row justify-content-end navibar">
-        <div class="navbar col-md-2">
-          <a href="yhteydenotto.html">PÖYTÄVARAUS</a>
-        </div>
-
-        <nav class="navbar col-md-1">
-        <div class="container-fluid">
-          <button id="hamburgerbtn" class="navbar-toggler" type="button">
-            <img id="hamburgericon" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="Valikko">
-          </button>
-        </div>
-        </nav>
+    <nav class="navbar-container">
+      <div class="navbar-top">
+        <ul>
+          <li>
+            <button id="hamburgerbtn" class="navbar-toggler" type="button">
+              <img id="hamburgericon" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="Valikko">
+            </button>
+          </li>
+          <li>
+            <a href="yhteydenotto.html">PÖYTÄVARAUS</a>
+          </li>
+        </ul>
       </div>
+
+
+
       <!-- piiloon menevä divi, jossa linkit -->
-      <div id="collapsediv" class="navibar">
+      <div id="collapsediv" class="navbar-bottom">
         <ul>
           <li><a href="yhteydenotto.html"> YHTEYDENOTTO </a></li>
           <li><a href="juomat.html"> JUOMAT </a</li>
@@ -44,7 +46,7 @@
           <li><a href="index.html"> ETUSIVU </a></li> 
         </ul>
       </div>
-    </div>
+    </nav>
 
     <!--HEADER-->
     <header>

@@ -24,15 +24,24 @@ body{
 }
 
 /*NAVBAR / HEADER*/
-.sticky-navbar{
+.navbar-container{
     height: 120px;
     position: sticky;
+    max-width: 1440px;
     top: 0;
     margin: 0 auto -165px; /* 165 = height + margin-top */
     z-index: 1;
 }
 
-.sticky-navbar a{
+.navbar-link{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    min-width: 60px;
+}
+
+
+.navbar-container a{
     border: 2px solid #f2f4f3;
     text-decoration: none;
     size: 14px;
@@ -43,7 +52,7 @@ body{
     padding: 3px 15px;
 }
 
-.sticky-navbar a:hover{
+.navbar-container a:hover{
     border: none;
     margin-left: 2px;
 }
@@ -54,9 +63,18 @@ body{
     outline: none;
 }
 */
-.navibar{
+.navbar-top, .navbar-bottom{
     background-color: rgba(10, 9, 8, 0.75);
     height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-top li{
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 10px;
 }
 
 #collapsediv{
