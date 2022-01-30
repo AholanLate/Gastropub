@@ -58,7 +58,7 @@ body{
     visibility: hidden;
     margin: 0;
     padding: 0;
-    width: 271px;
+    width: 255px;
     height: 175px;
 }
 
@@ -84,7 +84,7 @@ body{
 
 .navbar-link{
     display: block;
-    width: 182px;   
+    width: 167px;   
 }
 
 .navbar-link:hover{
@@ -92,7 +92,6 @@ body{
 }
 
 .navbar-container ul{
-    list-style-type: none;
     list-style: none;
     margin: 0;
     padding: 0;
