@@ -24,13 +24,10 @@ body{
 }
 
 /*NAVBAR / HEADER*/
-
-
 .sticky-navbar{
     height: 120px;
     position: sticky;
     top: 0;
-
     margin: 0 auto -165px; /* 165 = height + margin-top */
 }
 
@@ -40,9 +37,7 @@ body{
     size: 14px;
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
-    word-spacing: 15%;
-    
-
+    letter-spacing: 3px;
     color: #f2f4f3;
     padding: 3px 15px;
 }
@@ -63,7 +58,6 @@ body{
     height: 60px;
 }
 
-
 #collapsediv{
     visibility: hidden;
     margin: 0;
@@ -82,7 +76,6 @@ body{
     padding: 0 !important;
     margin: 0 !important;
 }
-
 
 ul{
     list-style-type: none;
@@ -111,7 +104,6 @@ li a:hover{
     margin-right: 2px;
 }
 
-
 .header-image{
     max-width: 1440px;
     max-height: 500px;
@@ -126,7 +118,6 @@ li a:hover{
     height: 100%;
     width: 100%;
 }
-
 */
 
 /*CONTENT*/
@@ -143,7 +134,6 @@ h1{
     font-size: 36px;
     text-transform: uppercase;
 }
-
 
 .tervetuloa{
     text-align: center;
@@ -175,7 +165,6 @@ p, table{
     max-width: 500px !important;
     padding: 0 !important;
 }
-
 
 .img-fluid {
     width: 100%;
@@ -233,7 +222,6 @@ footer h2{
 footer .col-md-4, footer .col-4{
     min-width: 215px !important;
 }
-
 
 .yhteystiedot{
     text-align: left;
@@ -331,7 +319,7 @@ footer .col-md-4, footer .col-4{
         text-align: center;
         margin: auto;
         margin-top: 25px;
-        padding: 0 0 10px 0;
+        margin-bottom: 25px;
     }
 
     .some-flex{
