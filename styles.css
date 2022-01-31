@@ -305,8 +305,6 @@ footer p, footer table{
 .footer-margins{
     width: 1000px;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
     padding: 50px 0 0 0;
 }
 
@@ -372,9 +370,10 @@ footer .col-md-4, footer .col-4{
     }
 }
 
-@media only screen and (max-width: 500px){
-    .footer-margins{
-        margin-top: 0;
+@media only screen and (max-width: 505px){
+    main{
+        margin: auto;
+        margin-bottom: 0;
     }
 }
 
@@ -387,6 +386,7 @@ footer .col-md-4, footer .col-4{
         width: 500px;
         margin: auto;
         margin-top: 50px;
+        margin-bottom: 60px;
     }
 
     .container{
@@ -423,7 +423,6 @@ footer .col-md-4, footer .col-4{
     .footer-margins{
         width: 500px;
         margin: auto;
-        margin-top: 60px;
     }
 
     footer .col-4{
