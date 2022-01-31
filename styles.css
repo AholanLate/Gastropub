@@ -151,16 +151,17 @@ h1, h2{
     text-transform: uppercase;
     color: #0A0908;    
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     position: relative;
 }
 
 h1::after, h2::after{
     content: "";
+    display: block;
     position: absolute;
     width: 215px;
-    bottom: 0;
-    left: -30%; /* täytyy korjata */
+    left: 50%;
+    transform: translateX(-50%);
     border-bottom: 1px solid #49111C;
 }
 
@@ -176,11 +177,10 @@ p{
     font-size: 16px;
     line-height: 200%;
     color: #0A0908;
-    padding-top: 10px; /* täytyy poistaa myöhemmin */
 }
 
 
-/* Grid hax: basically to delete boostrap auto margins and paddings*/
+/* Grid hax: basically to delete Bootstrap auto margins and paddings */
 .col-md-12{
     margin: 0 !important;
     padding: 0 !important;
@@ -192,7 +192,7 @@ p{
 }
 
 
-/* Main content settings for the middle grid*/
+/* Main content settings for the middle grid */
 
 .img-fluid {
     width: 100%;
@@ -216,6 +216,7 @@ article h2{
 
 article h2::after{
     left: 0;
+    transform: translateX(0%);
 }
 
 .drinks{
@@ -225,6 +226,7 @@ article h2::after{
 article .drinks h2::after{
     right: 0;
     left: auto;
+    transform: translateX(0%);
 }
 
 .textbox{
@@ -246,17 +248,18 @@ footer h3{
     font-size: 24px;
     text-transform: uppercase;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     position: relative;
 }
 
 footer h3::after{
     content: "";
+    display: block;
     position: absolute;
     width: 215px;
-    bottom: 0;
     left: 0;
     border-bottom: 1px solid #f2f4f3;
+    padding-top: 5px;
 }
 
 footer p, footer table{
@@ -291,8 +294,8 @@ footer .col-md-4, footer .col-4{
 }
 
 .opening-hours h3::after{
-    left: -65%; /* täytyy korjata */
-}
+    left: 50%;
+    transform: translateX(-50%);}
 
 #opening-hours-table{
     text-align: left;
@@ -387,9 +390,9 @@ footer .col-md-4, footer .col-4{
     }
 
     .opening-hours h3::after{
-        width: 146px;
-        right: 0;
-        left: auto;
+        width: 145px;
+        left: -50%;
+        transform: translateX(-2%);
     }
     
     .some{
@@ -398,8 +401,9 @@ footer .col-md-4, footer .col-4{
     }
     
     .some h3::after{
-        width: 146px;
-        left: -2px; /* täytyy korjata */
+        width: 145px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .some-icon{
