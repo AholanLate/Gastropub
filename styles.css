@@ -187,10 +187,7 @@ p{
 .content-button{
     border: 2px solid #49111C;
     background-color: #f2f4f3;
-    padding: 5px 15px;
-}
-
-.content-button a{
+    padding: 7px 15px;
     color: #49111C;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
@@ -200,8 +197,17 @@ p{
     text-decoration: none;
 }
 
+/*
+.content-button a{
+}
+*/
+
 .content-button:hover{
-    border: 2px solid #f2f4f3;
+    border: 2px solid  #49111C;
+    
+    color: #f2f4f3;
+    background-color: #49111C;
+    /**/
 }
 
 
