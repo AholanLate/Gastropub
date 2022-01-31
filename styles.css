@@ -25,12 +25,13 @@ body{
 
 
 /* Navbar basic settings */
+
 .navbar-container{
-    height: 260px;
+    height: 280px;
     position: sticky;
     max-width: 1440px;
     top: 0;
-    margin: 0 auto -305px; /* 165 = height + margin-top */
+    margin: 0 auto -325px; /* 165 = height + margin-top */
     z-index: 1;
     overflow: auto;
 }
@@ -38,12 +39,13 @@ body{
 .navbar-container a{
     border: 2px solid #f2f4f3;
     text-decoration: none;
+    text-align: right;
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 3px;
     color: #f2f4f3;
-    padding: 3px 15px;
+    padding: 5px 15px;
 }
 
 .navbar-top, .navbar-bottom{
@@ -58,8 +60,8 @@ body{
     visibility: hidden;
     margin: 0;
     padding: 0;
-    width: 255px;
-    height: 175px;
+    width: 238px;
+    height: 220px;
 }
 
 
@@ -84,7 +86,7 @@ body{
 
 .navbar-link{
     display: block;
-    width: 167px;   
+    width: 150px;   
 }
 
 .navbar-link:hover{
@@ -181,6 +183,7 @@ p{
 
 
 /* Grid hax: basically to delete Bootstrap auto margins and paddings */
+
 .col-md-12{
     margin: 0 !important;
     padding: 0 !important;
@@ -235,6 +238,7 @@ article .drinks h2::after{
 
 
 /* Footer */
+
 footer{
     background-color: #49111C;
     color: #f2f4f3;
@@ -320,7 +324,9 @@ footer .col-md-4, footer .col-4{
     filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
 }
 
+
 /* Media */
+
 @media (pointer: coarse) {
     body{
         background-image: none;
