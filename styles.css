@@ -455,12 +455,12 @@ footer .col-md-4, footer .col-4{
     }
 
     #collapsible-div{
-        width: 180px;
-        margin-top: -27px;
+        width: 175px;
+        margin-top: -15px;
     }
 
     .navbar-top li{
-        margin: 5px 5px 0 0;
+        margin: 10px 10px 0 0;
     }
 
     #reservation{
@@ -468,8 +468,8 @@ footer .col-md-4, footer .col-4{
     }
 
     #hamburger-icon{
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
         padding: 0 !important;
         margin: 0 !important;
         filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
@@ -477,8 +477,8 @@ footer .col-md-4, footer .col-4{
     
     #hamburger-button{
         background-color: rgba(10, 9, 8, 0.75);
-        width: 28px;
-        padding: 10px 5px !important;
+        width: 30px;
+        padding: 7px 3px !important;
         margin: 0;
     }
 
