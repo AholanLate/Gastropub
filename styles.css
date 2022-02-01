@@ -26,12 +26,12 @@ body{
 
 /* Navbar basic settings */
 
-.navbar-container{
-    height: 280px;
+#navbar-container{
+    height: 60px;
     position: sticky;
     max-width: 1440px;
     top: 0;
-    margin: 0 auto -325px; /* 325 = height + margin-top */
+    margin: 0 auto -105px;
     z-index: 1;
     overflow: auto;
 }
@@ -57,7 +57,7 @@ body{
 
 #collapsible-div{
     float: right;
-    visibility: hidden;
+    display: none;
     margin: 0;
     padding: 0;
     width: 238px;

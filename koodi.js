@@ -1,28 +1,33 @@
       
-      //Kun koko ikkunan kaikki elementit ovat latautuneet
-  window.onload = function() {
-    //haetaan nappi id:n perusteella ja tallennetaan se muuttujaan
-    const btn = document.getElementById("hamburger-button");
+//Kun koko ikkunan kaikki elementit ovat latautuneet
+window.onload = function() {
+  //haetaan nappi id:n perusteella ja tallennetaan se muuttujaan
+  const btn = document.getElementById("hamburger-button");
 
-    //Jos lnappia painetaan, ajetaan seuraava koodi
-    btn.onclick = function() {
+  //Jos lnappia painetaan, ajetaan seuraava koodi
+  btn.onclick = function() {
 
-    //etitään laajennettava div id:n perusteella ja tallennetaan se muuttujaan
-    let vElement = document.getElementById("collapsible-div");
-    //Haetaan divin tyylit
-    let vStyle = window.getComputedStyle(vElement);
-    //Haetaan tyyleistä visibilityn arvo ja tallennetaan se muuttujaan
-    let vVisibility = vStyle.getPropertyValue('visibility');
+    //etsitään id:n perusteella pienentyvä div ja haetaan sen tyylit. Tallennetaan nämä tiedot muuttujiin.
+    let collapsibleDiv = document.getElementById("collapsible-div");
+    let collapsibleDivStyle = window.getComputedStyle(collapsibleDiv);
 
-    //jos arvo on hidden vaihdetaan se visible, muuten asetetaan arvoksi hidden
-    if (vVisibility === "hidden"){
-        vElement.style.visibility = "visible";
+    //haetaan div navbar-container ja tallennetaan se muuttujaan
+    let navbarContent = document.getElementById("navbar-container");
+
+    //Säädetään navbar-containerin ja collapsible divin tyylejä perustuen collapsible divin tyylin
+    //display arvoon. Arvo on joko "none" tai "inline"
+    if (collapsibleDivStyle.getPropertyValue('display') === "none"){
+      collapsibleDiv.style.display = "inline";
+      navbarContent.style.marginBottom = "-325px";
+      navbarContent.style.height = "280px";
     }
     else{
-      vElement.style.visibility = "hidden";
+      collapsibleDiv.style.display = "none";
+      navbarContent.style.marginBottom = "-105px";
+      navbarContent.style.height = "60px";
     }
 
-      //koska ei vaihdeta sivua
+      //koska ei vaihdeta sivua, palautetaan false
       return false;
-    }
   }
+}
