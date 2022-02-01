@@ -37,14 +37,14 @@ body{
 }
 
 .navbar-container a{
-    border: 2px solid #f2f4f3;
+    border: 2px solid #F2F4F3;
     text-decoration: none;
     text-align: right;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 3px;
-    color: #f2f4f3;
+    color: #F2F4F3;
     padding: 5px 15px;
 }
 
@@ -171,7 +171,7 @@ h1::after, h2::after{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 60px;
-    padding: 0 3% !important;
+    padding: 0 25px !important;
 }
 
 p{
@@ -182,11 +182,11 @@ p{
 }
 
 
-/* content-button */
+/* Content button */
 
 .content-button{
     border: 2px solid #49111C;
-    background-color: #f2f4f3;
+    background-color: #F2F4F3;
     padding: 7px 15px;
     color: #49111C;
     text-transform: uppercase;
@@ -204,10 +204,8 @@ p{
 
 .content-button:hover{
     border: 2px solid  #49111C;
-    
-    color: #f2f4f3;
     background-color: #49111C;
-    /**/
+    color: #F2F4F3;
 }
 
 
@@ -232,14 +230,14 @@ p{
     padding: 0 !important;
 }
 
-article, aside, img {
+article, aside{
     width: 500px;
     height: 500px;
     padding: 0 !important;
 }
 
 article{
-    background-color: #f2f4f3;
+    background-color: #F2F4F3;
 }
 
 article h2{
@@ -270,9 +268,9 @@ article .drinks h2::after{
 
 footer{
     background-color: #49111C;
-    color: #f2f4f3;
+    color: #F2F4F3;
     width: 100%;
-    min-height: 250px;
+    min-height: 275px;
     margin: 0 !important;
 }
 
@@ -291,7 +289,7 @@ footer h3::after{
     position: absolute;
     width: 215px;
     left: 0;
-    border-bottom: 1px solid #f2f4f3;
+    border-bottom: 1px solid #F2F4F3;
     padding-top: 5px;
 }
 
@@ -299,19 +297,17 @@ footer p, footer table{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 150%;
-    color: #f2f4f3;
+    color: #F2F4F3;
 }
 
 .footer-margins{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 50px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 footer .col-md-4, footer .col-4{
-    min-width: 215px !important;
+    min-width: 215px;
 }
 
 .contact-info{
@@ -366,54 +362,40 @@ footer .col-md-4, footer .col-4{
 */
 
 /*for footer margins*/
-@media only screen and (max-width: 1050px){
-    .footer-margins{
-        max-width: 950px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .footer-margins{
-        margin-top: 0;
-    }
-}
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
     #logo{
         content: url(images/tekstilogo.svg);
     }
 
-    main{
-        width: 500px;
-        margin: auto;
-        margin-top: 50px;
+    .footer-margins{
+        width: 90%;
     }
+}
 
+@media only screen and (max-width: 1000px){
     .container{
         min-width: 500px;
     }
     
+    main{
+        width: 500px;
+        margin: auto;
+    }
+
     .welcome{
-        margin-top: -45px !important;
         padding: 0 5% !important;
     }
 
+    .col-md-6{
+        width: 100%;
+    }
+    
     .drinks{
         text-align: left;
     }
 
     article .drinks h2::after{
         left: 0;
-    }
-
-    article.col-md-6{
-        width: 500px !important;
-        padding: 0 !important;
-    }
-    
-    aside.col-md-6{
-        width: 500px !important;
-        padding: 0 !important;
     }
 
     footer h3::after{
@@ -431,11 +413,11 @@ footer .col-md-4, footer .col-4{
     }
 
     .contact-info{
-        margin-left: 35px;
+        margin-left: 30px;
     }
 
     .opening-hours{
-        margin-right: 35px;
+        margin-right: 30px;
         text-align: right;
     }
 
@@ -466,7 +448,7 @@ footer .col-md-4, footer .col-4{
         margin: 0 5px;
     }
 
-    /*Navbar responsivnes*/
+    /*Navbar responsiveness*/
 
     .navbar-top{
         background-color: rgba(10, 9, 8, 0);
@@ -477,8 +459,8 @@ footer .col-md-4, footer .col-4{
     }
 
     #hamburger-icon{
-        width: 44px;
-        height: 44px;
+        width: 28px;
+        height: 28px;
         padding: 0 !important;
         margin: 0 !important;
         filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
@@ -486,9 +468,80 @@ footer .col-md-4, footer .col-4{
     
     #hamburger-button{
         background-color: rgba(10, 9, 8, 0.75);
-        width: 44px;
-        height: 44px;
-        padding: 15px 5px !important;
+        width: 28px;
+        padding: 10px 5px !important;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    .footer-margins{
+        width: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    main, .col-md-12, .col-md-6{
+        width: 100% !important;
+    }
+    
+    article, aside{
+        width: 100% !important;
+        height: auto;
+    }
+
+    .footer-margins{
+        width: 100% !important;
+        margin-top: 0px;
+    }
+
+    .footer-margins{
+        padding: 40px 0 0 0;
+    }
+
+    footer .col-md-4, footer .col-4{
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+     
+    .contact-info{
+        text-align: center;
+        margin: auto;
+    }
+
+    .contact-info h3::after{
+        width: 145px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .opening-hours{
+        text-align: center;
+        margin: 15px auto 0px;
+    }
+
+    #opening-hours-table{
+        text-align: left;
+        margin: auto;
+    }
+    
+    .opening-hours h3::after{
+        width: 145px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .some h3::after{
+        width: 145px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }
