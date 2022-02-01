@@ -15,9 +15,9 @@ window.onload = function() {
     let navbarContent = document.getElementById("navbar-container");
 
     //Säädetään navbar-containerin ja collapsible divin tyylejä perustuen collapsible divin tyylin
-    //display arvoon. Arvo on joko "none" tai "inline"
+    //display arvoon. Arvo on joko "none" tai "block"
     if (collapsibleDivStyle.getPropertyValue('display') === "none"){
-      collapsibleDiv.style.display = "inline";
+      collapsibleDiv.style.display = "block";
       navbarContent.style.marginBottom = "-325px";
       navbarContent.style.height = "280px";
     }

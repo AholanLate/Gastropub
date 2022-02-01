@@ -56,31 +56,30 @@ body{
 }
 
 #collapsible-div{
+    width: 238px;
+    height: 220px;
     float: right;
     display: none;
     margin: 0;
     padding: 0;
-    width: 238px;
-    height: 220px;
 }
 
 
-/* Hamburger icon and link settings */
+/* Hamburger icon and hamburger link settings */
 
 #hamburger-icon{
     width: 28px;
     height: 28px;
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0;
+    margin: 0;
     filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
 }
 
 #hamburger-button{
     border: none;
     width: 28px;
-    padding: 0 !important;  
+    padding: 0;  
 }
-
 
 /* Navbar link settings */
 
@@ -196,11 +195,6 @@ p{
     letter-spacing: 3px;
     text-decoration: none;
 }
-
-/*
-.content-button a{
-}
-*/
 
 .content-button:hover{
     border: 2px solid  #49111C;
@@ -352,14 +346,6 @@ footer .col-md-4, footer .col-4{
 
 /* Media */
 
-/*
-@media (pointer: coarse) {
-    body{
-        background-image: none;
-        background-color: #f5f5f5;
-    }
-}
-*/
 
 /*for footer margins*/
 @media only screen and (max-width: 1100px){
@@ -448,6 +434,7 @@ footer .col-md-4, footer .col-4{
         margin: 0 5px;
     }
 
+
     /*Navbar responsiveness*/
 
     .navbar-top{
@@ -470,15 +457,15 @@ footer .col-md-4, footer .col-4{
     #hamburger-icon{
         width: 30px;
         height: 30px;
-        padding: 0 !important;
-        margin: 0 !important;
+        padding: 0;
+        margin: 0;
         filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
     }
     
     #hamburger-button{
         background-color: rgba(10, 9, 8, 0.75);
         width: 30px;
-        padding: 7px 3px !important;
+        padding: 7px 3px;
         margin: 0;
     }
 
