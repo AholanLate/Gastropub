@@ -385,6 +385,7 @@ footer .col-md-4, footer .col-4{
 
 #comments{
     height: 120px;
+    max-height: 200px;
 }
 
 .feedback-form::placeholder{
