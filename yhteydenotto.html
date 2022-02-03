@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imaginary Gastropub</title>
+  <link rel="icon" type="image/x-icon" href="images/igp-dark.svg">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Own CSS-->
+  <link rel="stylesheet" href="styles.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <!--NAVBAR-->
+    <nav id="navbar-container" class="navbar-container">
+      <div class="navbar-top">
+        <ul>
+          <li>
+            <!-- Linkki toimii JS-scriptin avulla ks. koodi.js -->
+            <a id="hamburger-button" href="#">
+              <img id="hamburger-icon" src="images/Hamburger_icon.svg" alt="Valikko">
+            </a>
+          </li>
+          <li>
+            <a id="reservation" class="navbar-link" href="yhteydenotto.html">PÖYTÄVARAUS</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- piiloon menevä divi, jossa linkit -->
+      <div id="collapsible-div" class="navbar-bottom">
+        <ul>
+          <li><a class="navbar-link" href="index.html">ETUSIVU</a></li>
+          <li><a class="navbar-link" href="menu.html">MENU</a></li>
+          <li><a class="navbar-link" href="juomat.html">JUOMAT</a></li>
+          <li><a class="navbar-link" href="tarina.html">MEISTÄ</a></li>
+          <li><a class="navbar-link" href="yhteydenotto.html">YHTEYS</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner">
+            <img class="header-image img-fluid" src="images/gastropubheader.jpg" alt="Banneri">
+            <img id="logo" class="img-fluid" src="images/gastropublogo.svg" alt="Yrityksen logo">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+
+     <!--PÄÄOTSIKKO-->
+     <div class="row">
+        <div class="col-md-12">
+          <div class="welcome">
+            <h1>Yhteys</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptates qui rem quibusdam reprehenderit explicabo laborum adipisci iste, itaque distinctio unde maiores vero et laboriosam ipsa porro tempore numquam asperiores. Asperiores, aspernatur laborum quis necessitatibus eos temporibus sed!</p>
+          </div>
+        </div>
+      </div>
+
+      <!--PÖYTÄVARAUS-->
+      <div class="row">
+
+        <aside class="col-md-6">
+          <img class="img-fluid" src="images/poytavaraus.jpg" alt="kuva pöydästä">
+        </aside>
+
+        <article class="col-md-6">
+          <div class="textbox">
+            <form>
+                <h2>Varaa pöytä</h2>
+                    <input style="border-top: 1px solid; border-top-left-radius: 4px; border-top-right-radius: 4px;" type="text" name="name" id="name" class="reservation-form" placeholder="Etunimi" required>
+                    <input type="text" name="name" id="name" class="reservation-form" placeholder="Sukunimi" required>
+                    <input type="email" name="email" id="email" class="reservation-form" placeholder="Sähköposti" required>
+                    <select style="padding-left: 4px;" class="reservation-form" required>
+                        <option selected value>Ryhmän koko</option>
+                        <option value="1-2">1-2 henkilöä</option>
+                        <option value="2-4">2-4 henkilöä</option>
+                        <option value="4-6">4-6 henkilöä</option>
+                        <option value="6-8">6-8 henkilöä</option>
+                        <option value="8-10">8-10 henkilöä</option>
+                    </select>
+                    <input type="date" class="reservation-form" required>
+                    <input style="border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; margin-bottom: 10px;" type="time" class="reservation-form" required>
+                    <input style="margin-top: 10px;" class="content-button" type="submit" value="VARAA">
+            </form>
+          </div>
+        </article>
+      </div>
+
+      <!--PALAUTE-->
+      <div class="row flex-row-reverse">
+        <aside class="col-md-6">
+          <img class="img-fluid" src="images/kippis.jpg" alt="oluttuopit kippistää">
+        </aside>
+        
+        <article class="col-md-6">
+            <div class="textbox drinks">
+                <h2>Jätä palautetta</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                        <form>
+                            <textarea style="height: 120px;" id="comments" class="feedback-form" name="comment" placeholder="Kirjoita palautteesi tähän..."></textarea>
+                            <input style="height: 40px;" type="email" name="email" id="email" class="feedback-form" placeholder="Sähköposti" required>
+                            <input style="margin-top: 20px;" class="content-button" type="submit" value="LÄHETÄ">
+                        </form>
+            </div>
+        </article>
+      </div>
+
+     <!--OTA YHTEYTTÄ-->
+      <div class="row">
+        <aside class="col-md-6">
+          <img class="img-fluid" src="images/phone.jpg" alt="kuva vanhasta puhelimesta">
+        </aside>
+        <article class="col-md-6">
+          <div class="textbox">
+            <h2>Ota yhteyttä</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quam.</p>
+            <p>Lorem ipsumin tie 123 <br>
+            (01) 123 4567<br>
+            <img style="margin-right: 5px;" id="email-logo" src="images/email-logo.svg" alt="email-logo">email@imaginarygastropub.fi
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-margins">
+        <div class="row">
+          <div class="col-4 contact-info">
+            <h3>Yhteystiedot</h3>
+            <address>Imaginary Gastropub<br>
+              Lorem ipsumin tie 123<br>
+              12345 Lipsumila<br>
+              (01) 123 4567<br>
+              email@imaginarygastropub.fi
+            </address>
+          </div>
+          <div class="col-4 opening-hours">
+            <h3>Aukioloajat</h3>
+            <table id="opening-hours-table">
+              <tr>
+                <td>ma-to &nbsp;</td>
+                <td>16-23</td>
+              </tr>
+              <tr>
+                <td>pe-la</td>
+                <td>16-02</td>
+              </tr>
+              <tr>
+                <td>su</td>
+                <td>14-23</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-4 some">
+            <h3>Sosiaalinen media</h3>
+            <p><a href="#"><img class="some-icon" src="images/icons8-facebook.svg" alt="Facebook"></a>
+              <a href="#"><img class="some-icon" src="images/icons8-instagram.svg" alt="Instagram"></a>
+              <a href="#"><img class="some-icon" src="images/icons8-twitter.svg" alt="Twitter"></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+    <script src="koodi.js"></script>
+  </div>
+</body>
+
+</html>

@@ -344,8 +344,40 @@ footer .col-md-4, footer .col-4{
 }
 
 
-/* Media */
+/*YHTEYDENOTTO.HTML*/
+.reservation-form{
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    border-top: none;
+    padding-left: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 200%;
+}
 
+.feedback-form{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 4px;
+
+}
+
+.feedback-form::placeholder{
+    text-align: right;
+    margin-right: 4px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+#email-logo{
+    width: 35px; 
+    filter: invert(6%) sepia(28%) saturate(7500%) hue-rotate(340deg) brightness(91%) contrast(91%);
+}
+
+
+/* Media */
 
 /*for footer margins*/
 @media only screen and (max-width: 1100px){
