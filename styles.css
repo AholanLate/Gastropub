@@ -43,7 +43,7 @@ body{
     text-align: right;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    font-weight: 700; /* Vaihdetaanko? Vrt. linkkinappien font-weight! */
+    font-weight: 800;
     letter-spacing: 3px;
     padding: 5px 15px;
 }
@@ -89,7 +89,6 @@ body{
 }
 
 .navbar-link:hover{
-    /* border: 2px solid rgba(10, 9, 8, 0); */
     color: #0A0908;
     background-color: #F2F4F3;
 }
@@ -193,7 +192,7 @@ p{
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    font-weight: 800; /* Vaihdetaanko? Vrt. navin font-weight! */
+    font-weight: 800;
     letter-spacing: 3px;
     padding: 7px 15px;
 }
@@ -243,10 +242,6 @@ article h2{
 article h2::after{
     left: 0;
     transform: translateX(0%);
-}
-
-article p{
-    font-weight: 400; /* Vaihdetaanko alkuperäisen mallin mukaiseksi? */
 }
 
 .article-right{
