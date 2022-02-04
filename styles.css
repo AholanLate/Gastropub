@@ -359,7 +359,13 @@ footer .col-md-4, footer .col-4{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 200%;
+    color:#0A0908;
 }
+
+.reservation-form::placeholder{
+    color:#0A0908;
+}
+
 .reservation-form.top-part{
     border-top: 1px solid;
     border-top-left-radius: 4px;
@@ -380,6 +386,7 @@ footer .col-md-4, footer .col-4{
     width: 100%;
     border: 1px solid;
     border-radius: 4px;
+    margin-bottom: 4px;
 }
 
 .feedback-form.bottom-part{
@@ -391,6 +398,7 @@ footer .col-md-4, footer .col-4{
 #comments{
     height: 120px;
     max-height: 200px;
+    min-height: 40px;
 }
 
 .feedback-form::placeholder{
@@ -399,6 +407,7 @@ footer .col-md-4, footer .col-4{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 200%;
+    color:#0A0908;
 }
 
 #email-logo{
