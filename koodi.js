@@ -9,9 +9,8 @@ function isMobile(){
 //and if the navbar is visible (isVisible)
 function updateNavbarStatus(isVisible){
 
-  //Gets collapsibleDiv element and its style and saves those in variables
+  //Gets collapsibleDiv element and saves it in variable
   let collapsibleDiv = document.getElementById("collapsible-div");
-  let collapsibleDivStyle = window.getComputedStyle(collapsibleDiv);
   
   //Gets div navbar-container and saves it in container
   let navbarContent = document.getElementById("navbar-container");
@@ -53,6 +52,7 @@ window.onload = function() {
   //Let's get the hamburger button and save it to constant variable.
   const btn = document.getElementById("hamburger-button");
 
+   //Gets collapsibleDiv element and its style and saves those in variables
   let collapsibleDiv = document.getElementById("collapsible-div");
   let collapsibleDivStyle = window.getComputedStyle(collapsibleDiv);
 
