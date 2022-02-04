@@ -274,19 +274,19 @@ article .article-right h2::after{
 }
 
 .table-cell-dish {
-    flex: 1 85%;
+    flex: 0 85%;
 }
 
 .table-cell-price {
     text-align: right;
-    flex: 1 15%;
+    flex: 0 15%;
 }
 
 .colspan-2 {
     font-style: italic;
     font-size: 14px;
     padding-bottom: 15px;
-    flex: 1 100%;
+    flex: 0 100%;
 }
 
 /* Footer */
