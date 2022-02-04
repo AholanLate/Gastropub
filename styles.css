@@ -5,7 +5,7 @@ body{
 }
 
 .container{
-    background-color: #fff;
+    background-color: #FFF;
     max-width: 1440px;
     min-width: 500px;
     width: 100%;
@@ -289,94 +289,9 @@ article .article-right h2::after{
     flex: 0 100%;
 }
 
-/* Footer */
-
-footer{
-    background-color: #49111C;
-    color: #F2F4F3;
-    width: 100%;
-    min-height: 275px;
-    margin: 0 !important;
-}
-
-footer h3{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    display: inline-block;
-    padding-bottom: 15px;
-    position: relative;
-}
-
-footer h3::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 215px;
-    left: 0;
-    border-bottom: 1px solid #F2F4F3;
-    padding-top: 5px;
-}
-
-footer p, footer address, footer table{
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #F2F4F3;
-}
-
-.footer-margins{
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 0 0 0;
-}
-
-footer .col-md-4, footer .col-4{
-    min-width: 215px;
-}
-
-.contact-info{
-    text-align: left;
-    padding: 0 !important;
-}
-
-.opening-hours{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 0 !important;
-}
-
-.opening-hours h3::after{
-    left: 50%;
-    transform: translateX(-50%);}
-
-#opening-hours-table{
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.some{
-    text-align: right;
-    padding: 0 !important;
-}
-
-.some h3::after{
-    right: 0;
-    left: auto;
-}
-
-.some-icon{
-    width: 36px;
-    height: auto;
-    margin: 0 0 0 10px;
-    filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
-}
-
 
 /* Yhteydenotto */
+
 .reservation-form{
     width: 100%;
     height: 40px;
@@ -449,6 +364,94 @@ footer .col-md-4, footer .col-4{
     width: 35px; 
     filter: invert(6%) sepia(28%) saturate(7500%) hue-rotate(340deg) brightness(91%) contrast(91%);
     margin-right: 5px;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #49111C;
+    color: #F2F4F3;
+    width: 100%;
+    min-height: 275px;
+    margin: 0 !important;
+}
+
+footer h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+footer h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 215px;
+    left: 0;
+    border-bottom: 1px solid #F2F4F3;
+    padding-top: 5px;
+}
+
+footer p, footer address, footer table{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #F2F4F3;
+}
+
+.footer-margins{
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 0 0 0;
+}
+
+footer .col-md-4, footer .col-4{
+    min-width: 215px;
+}
+
+.contact-info{
+    text-align: left;
+    padding: 0 !important;
+}
+
+.opening-hours{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.opening-hours h3::after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#opening-hours-table{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.some{
+    text-align: right;
+    padding: 0 !important;
+}
+
+.some h3::after{
+    right: 0;
+    left: auto;
+}
+
+.some-icon{
+    width: 36px;
+    height: auto;
+    margin: 0 0 0 10px;
+    filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
 }
 
 
