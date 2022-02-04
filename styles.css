@@ -174,7 +174,7 @@ h1::after, h2::after{
     padding: 0 25px !important;
 }
 
-p{
+p, article .table{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -258,6 +258,31 @@ article .article-right h2::after{
     margin: 10%;
 }
 
+.table {
+    padding: 0px;
+    max-width: 400px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.right{
+    text-align: left;
+}
+
+.table-cell-dish {
+    flex: 1 85%;
+}
+
+.table-cell-price {
+    text-align: right;
+    flex: 1 15%;
+}
+
+.colspan-2 {
+    font-style: italic;
+    padding-bottom: 15px;
+    flex: 1 100%;
+}
 
 /* Footer */
 
@@ -398,7 +423,6 @@ footer .col-md-4, footer .col-4{
     border-top: none;
     margin-bottom: 8px;
 }
-
 
 #comments{
     height: 120px;
