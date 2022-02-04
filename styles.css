@@ -64,6 +64,10 @@ body{
     padding: 0;
 }
 
+#hidden-link{
+    display: none;
+}
+
 
 /* Hamburger icon and hamburger link settings */
 
