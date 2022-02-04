@@ -89,7 +89,9 @@ body{
 }
 
 .navbar-link:hover{
-    border: 2px solid rgba(10, 9, 8, 0);
+    /* border: 2px solid rgba(10, 9, 8, 0); */
+    color: #0A0908;
+    background-color: #F2F4F3;
 }
 
 .navbar-container ul{
@@ -531,7 +533,8 @@ footer .col-md-4, footer .col-4{
 
     #collapsible-div{
         width: 175px;
-        margin-top: -15px;
+        margin-top: -12px;
+        margin-right: 10px;
     }
 
     .navbar-top li{
