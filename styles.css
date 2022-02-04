@@ -280,6 +280,7 @@ article .article-right h2::after{
 
 .colspan-2 {
     font-style: italic;
+    font-size: 14px;
     padding-bottom: 15px;
     flex: 1 100%;
 }
