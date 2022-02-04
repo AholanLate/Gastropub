@@ -5,7 +5,7 @@ body{
 }
 
 .container{
-    background-color: white;
+    background-color: #fff;
     max-width: 1440px;
     min-width: 500px;
     width: 100%;
@@ -556,13 +556,13 @@ footer .col-md-4, footer .col-4{
     }
 
     #collapsible-div{
-        width: 175px;
-        margin-top: -12px;
-        margin-right: 10px;
+        width: 170px;
+        margin-top: -14px;
+        margin-right: 8px;
     }
 
     .navbar-top li{
-        margin: 10px 10px 0 0;
+        margin: 8px 8px 0 0;
     }
 
     #reservation{
@@ -580,7 +580,8 @@ footer .col-md-4, footer .col-4{
     #hamburger-button{
         background-color: rgba(10, 9, 8, 0.75);
         width: 30px;
-        padding: 7px 3px;
+        height: 30px;
+        padding: 8px 3px 11px 3px;
         margin: 0;
     }
 
