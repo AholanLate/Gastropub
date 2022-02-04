@@ -38,13 +38,13 @@ body{
 
 .navbar-container a{
     border: 2px solid #F2F4F3;
+    color: #F2F4F3;
     text-decoration: none;
     text-align: right;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700; /* Vaihdetaanko? Vrt. linkkinappien font-weight! */
     letter-spacing: 3px;
-    color: #F2F4F3;
     padding: 5px 15px;
 }
 
@@ -166,7 +166,7 @@ h1::after, h2::after{
     border-bottom: 1px solid #49111C;
 }
 
-.welcome{
+.ingressi{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 60px;
@@ -176,6 +176,7 @@ h1::after, h2::after{
 p{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 200%;
     color: #0A0908;
 }
@@ -185,15 +186,14 @@ p{
 
 .content-button{
     border: 2px solid #49111C;
-    background-color: #F2F4F3;
-    padding: 7px 15px;
     color: #49111C;
+    text-decoration: none;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 800; /* Vaihdetaanko? Vrt. navin font-weight! */
     letter-spacing: 3px;
-    text-decoration: none;
+    padding: 7px 15px;
 }
 
 .content-button:hover{
@@ -243,11 +243,15 @@ article h2::after{
     transform: translateX(0%);
 }
 
-.drinks{
+article p{
+    font-weight: 400; /* Vaihdetaanko alkuperäisen mallin mukaiseksi? */
+}
+
+.article-right{
     text-align: right;
 }
 
-article .drinks h2::after{
+article .article-right h2::after{
     right: 0;
     left: auto;
     transform: translateX(0%);
@@ -290,6 +294,7 @@ footer h3::after{
 footer p, footer address, footer table{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 150%;
     color: #F2F4F3;
 }
@@ -344,7 +349,7 @@ footer .col-md-4, footer .col-4{
 }
 
 
-/*YHTEYDENOTTO.HTML*/
+/* Yhteydenotto */
 .reservation-form{
     width: 100%;
     height: 40px;
@@ -400,7 +405,7 @@ footer .col-md-4, footer .col-4{
         margin: auto;
     }
 
-    .welcome{
+    .ingressi{
         padding: 0 5% !important;
     }
 
@@ -408,11 +413,11 @@ footer .col-md-4, footer .col-4{
         width: 100%;
     }
     
-    .drinks{
+    .article-right{
         text-align: left;
     }
 
-    article .drinks h2::after{
+    article .article-right h2::after{
         left: 0;
     }
 
