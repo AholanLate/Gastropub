@@ -33,8 +33,10 @@ function updateNavbarStatus(isVisible){
     {
       //Desktop and visible
       collapsibleDiv.style.display = "block";
+      collapsibleDiv.style.height = "220px";
       navbarContent.style.marginBottom = "-325px";
       navbarContent.style.height = "280px";
+      hiddenLink.style.display = "none";
     }
   }
   else{
