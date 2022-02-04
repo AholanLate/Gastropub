@@ -70,7 +70,7 @@
         <div class="col-md-12">
           <div class="ingressi">
             <h1>Yhteys</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptates qui rem quibusdam
+            <p>Facilis voluptates qui rem quibusdam
               reprehenderit explicabo laborum adipisci iste, itaque distinctio unde maiores vero et laboriosam ipsa
               porro tempore numquam asperiores. Asperiores, aspernatur laborum quis necessitatibus eos temporibus sed!
             </p>
@@ -89,22 +89,19 @@
           <div class="textbox">
             <form>
               <h2>Varaa pöytä</h2>
-              <input style="border-top: 1px solid; border-top-left-radius: 4px; border-top-right-radius: 4px;"
-                type="text" name="name" id="name" class="reservation-form" placeholder="Etunimi" required>
-              <input type="text" name="name" id="name" class="reservation-form" placeholder="Sukunimi" required>
+              <input type="text" name="name" id="name" class="reservation-form top-part" placeholder="Nimi" required>
+              <input type="tel" name="phone" id="tel" class="reservation-form" placeholder="Puhelinnumero" required>
               <input type="email" name="email" id="email" class="reservation-form" placeholder="Sähköposti" required>
-              <select style="padding-left: 4px;" class="reservation-form" required>
+              <select class="reservation-form" required>
                 <option selected value>Ryhmän koko</option>
                 <option value="1-2">1-2 henkilöä</option>
                 <option value="2-4">2-4 henkilöä</option>
-                <option value="4-6">4-6 henkilöä</option>
-                <option value="6-8">6-8 henkilöä</option>
-                <option value="8-10">8-10 henkilöä</option>
+                <option value="4-8">4-8 henkilöä</option>
+                <option value="8+">8+ henkilöä</option>
               </select>
               <input type="date" class="reservation-form" required>
-              <input style="border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; margin-bottom: 10px;"
-                type="time" class="reservation-form" required>
-              <input style="margin-top: 10px;" class="content-button" type="submit" value="VARAA">
+              <input type="time" class="reservation-form bottom-part" required>
+              <input class="content-button" type="submit" value="VARAA">
             </form>
           </div>
         </article>
@@ -119,13 +116,11 @@
         <article class="col-md-6">
           <div class="textbox article-right">
             <h2>Jätä palautetta</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
             <form>
-              <textarea style="height: 160px;" id="comments" class="feedback-form" name="comment"
-                placeholder="Kirjoita palautteesi tähän..."></textarea>
-              <input style="height: 40px;" type="email" name="email" id="email" class="feedback-form"
-                placeholder="Sähköposti" required>
-              <input style="margin-top: 20px;" class="content-button" type="submit" value="LÄHETÄ">
+              <input type="text" name="name" id="name" class="feedback-form top-part" placeholder="Nimi" required>
+              <input type="email" name="email" id="email" class="feedback-form bottom-part" placeholder="Sähköposti" required>
+              <textarea id="comments" class="feedback-form" name="comment" placeholder="Kirjoita palautteesi tähän..."></textarea>
+              <input class="content-button" type="submit" value="LÄHETÄ">
             </form>
           </div>
         </article>
@@ -139,11 +134,11 @@
         <article class="col-md-6">
           <div class="textbox">
             <h2>Ota yhteyttä</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quam.</p>
+            <p>Iste perspiciatis dignissimos consequatur qui libero aperiam praesentium vel fugit suscipit!</p>
             <p>Lorem ipsumin tie 123<br>
               (01) 123 4567<br>
-              <img style="margin-right: 5px;" id="email-logo" src="images/email-logo.svg"
-                alt="email-logo">email@imaginarygastropub.fi
+              12345 Lipsumila<br>
+              email@imaginarygastropub.fi
             </p>
           </div>
         </article>
