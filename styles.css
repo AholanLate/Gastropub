@@ -342,6 +342,9 @@ article .article-right h2::after{
     margin-right: 8px;
 }
 
+.contact-table-margins{
+    margin-top: 40px;
+}
 
 /* Footer */
 
