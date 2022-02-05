@@ -85,7 +85,7 @@ body{
 
 .disabled-link{
     pointer-events: none;
-    opacity: 0.3;
+    filter: brightness(50%);
 }
 
 
