@@ -90,9 +90,9 @@
           <div class="textbox">
             <form>
               <h2>Varaa pöytä</h2>
-              <input type="text" name="name" id="name" class="reservation-form top-part" placeholder="Nimi" required>
-              <input type="tel" name="phone" id="tel" class="reservation-form" placeholder="Puhelinnumero" required>
-              <input type="email" name="email" id="email" class="reservation-form" placeholder="Sähköposti" required>
+              <input type="text" name="name" id="reservation-name" class="reservation-form top-part" placeholder="Nimi" required>
+              <input type="tel" name="phone" id="reservation-tel" class="reservation-form" placeholder="Puhelinnumero" required>
+              <input type="email" name="email" id="reservation-email" class="reservation-form" placeholder="Sähköposti" required>
               <select class="reservation-form" required>
                 <option selected value>Ryhmän koko</option>
                 <option value="1-2">1-2 henkilöä</option>
@@ -118,10 +118,10 @@
           <div class="textbox article-right">
             <h2>Jätä palautetta</h2>
             <form>
-              <input type="text" name="name" id="name" class="feedback-form top-part" placeholder="Nimi" required>
-              <input type="email" name="email" id="email" class="feedback-form bottom-part" placeholder="Sähköposti"
+              <input type="text" name="contact-name" id="contact-name" class="feedback-form top-part" placeholder="Nimi" required>
+              <input type="email" name="contact-email" id="contact-email" class="feedback-form bottom-part" placeholder="Sähköposti"
                 required>
-              <textarea id="comments" class="feedback-form" name="comment"
+              <textarea id="contact-comments" class="feedback-form" name="contact-comment"
                 placeholder="Kirjoita palautteesi tähän..."></textarea>
               <input class="content-button" type="submit" value="LÄHETÄ">
             </form>
