@@ -65,10 +65,10 @@ body{
 #navbar-top-left{
     flex: auto;
 }
+
 #navbar-top-right{
     flex: auto;
 }
-
 
 #collapsible-div{
     width: 238px;
@@ -121,7 +121,6 @@ body{
     padding: 0;
     margin: 0;
 }
-
 
 
 /* Navbar link settings */
@@ -301,7 +300,7 @@ article .article-right h2::after{
     margin: 10%;
 }
 
-.table {
+.table{
     padding: 0px;
     max-width: 400px;
     display: flex;
@@ -312,16 +311,16 @@ article .article-right h2::after{
     text-align: left;
 }
 
-.table-cell-dish {
+.table-cell-dish{
     flex: 0 70%;
 }
 
-.table-cell-price {
+.table-cell-price{
     text-align: right;
     flex: 0 30%;
 }
 
-.colspan-2 {
+.colspan-2{
     font-style: italic;
     font-size: 14px;
     padding: 0 0 15px 10px;
@@ -407,6 +406,7 @@ article .article-right h2::after{
 .contact-table-margins{
     margin-top: 40px;
 }
+
 
 /* Footer */
 
@@ -593,6 +593,7 @@ footer .col-md-4, footer .col-4{
     .feedback-form::placeholder{
         text-align: left;
     }
+
 
     /*Navbar responsiveness*/
 
