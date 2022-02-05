@@ -269,23 +269,23 @@ article .article-right h2::after{
     flex-flow: row wrap;
 }
 
-.right{
+.fix{
     text-align: left;
 }
 
 .table-cell-dish {
-    flex: 0 85%;
+    flex: 0 70%;
 }
 
 .table-cell-price {
     text-align: right;
-    flex: 0 15%;
+    flex: 0 30%;
 }
 
 .colspan-2 {
     font-style: italic;
     font-size: 14px;
-    padding-bottom: 15px;
+    padding: 0 0 15px 10px;
     flex: 0 100%;
 }
 

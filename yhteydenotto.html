@@ -34,7 +34,7 @@
             </a>
           </li>
           <li>
-            <a id="reservation" class="navbar-link" href="yhteydenotto.html#reservation">PÖYTÄVARAUS</a>
+            <a id="reservation" class="navbar-link" href="#table">PÖYTÄVARAUS</a>
           </li>
         </ul>
       </div>
@@ -46,8 +46,8 @@
           <li><a class="navbar-link" href="menu.html">MENU</a></li>
           <li><a class="navbar-link" href="juomat.html">JUOMAT</a></li>
           <li><a class="navbar-link" href="tarina.html">MEISTÄ</a></li>
-          <li><a id="hidden-link" class="navbar-link" href="yhteydenotto.html#reservation">VARAUS</a></li>
-          <li><a class="navbar-link" href="yhteydenotto.html#contact">YHTEYS</a></li>
+          <li><a class="navbar-link" href="yhteydenotto.html">YHTEYS</a></li>
+          <li><a id="hidden-link" class="navbar-link" href="#table">VARAUS</a></li>
         </ul>
       </div>
     </nav>
@@ -67,13 +67,13 @@
     <!--MAIN-->
     <main>
       <!--INGRESSI-->
-      <div class="row" id="varausankkuri">
+      <div class="row">
         <div class="col-md-12">
           <div class="ingressi">
-            <h1>Yhteys</h1>
-            <p>Facilis voluptates qui rem quibusdam
-              reprehenderit explicabo laborum adipisci iste, itaque distinctio unde maiores vero et laboriosam ipsa
-              porro tempore numquam asperiores. Asperiores, aspernatur laborum quis necessitatibus eos temporibus sed!
+            <h1>Yhteydenotto</h1>
+            <p>Facilis voluptates qui rem quibusdam reprehenderit explicabo laborum adipisci iste, itaque distinctio
+              unde maiores vero et laboriosam ipsa porro tempore numquam asperiores. Asperiores, aspernatur laborum 
+              quis necessitatibus eos temporibus sed!
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@
           <img class="img-fluid" src="images/reservation.jpg" alt="Ihminen pöydän ääressä">
         </aside>
 
-        <article class="col-md-6">
+        <article class="col-md-6" id="table">
           <div class="textbox">
             <form>
               <h2>Varaa pöytä</h2>
@@ -119,8 +119,10 @@
             <h2>Jätä palautetta</h2>
             <form>
               <input type="text" name="name" id="name" class="feedback-form top-part" placeholder="Nimi" required>
-              <input type="email" name="email" id="email" class="feedback-form bottom-part" placeholder="Sähköposti" required>
-              <textarea id="comments" class="feedback-form" name="comment" placeholder="Kirjoita palautteesi tähän..."></textarea>
+              <input type="email" name="email" id="email" class="feedback-form bottom-part" placeholder="Sähköposti"
+                required>
+              <textarea id="comments" class="feedback-form" name="comment"
+                placeholder="Kirjoita palautteesi tähän..."></textarea>
               <input class="content-button" type="submit" value="LÄHETÄ">
             </form>
           </div>
