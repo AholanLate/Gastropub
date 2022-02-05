@@ -24,20 +24,24 @@
   <div class="container">
 
     <!--NAVBAR-->
-    <nav id="navbar-container" class="navbar-container">
-      <div class="navbar-top">
-        <ul>
-          <li>
-            <!-- Linkki toimii JS-scriptin avulla ks. koodi.js -->
-            <a id="hamburger-button" href="#">
-              <img id="hamburger-icon" src="images/Hamburger_icon.svg" alt="Valikko">
-            </a>
-          </li>
-          <li>
-            <a id="reservation" class="navbar-link" href="yhteydenotto.html#table">PÖYTÄVARAUS</a>
-          </li>
-        </ul>
-      </div>
+    <div id="navbar-top-left">
+      <a id="navbar-logo-button" href="index.html"><img id="navbar-logo" src="images/igp.svg" alt="logo"></a>
+    </div>
+
+    <div id="navbar-top-right">
+      <ul>
+        <li>
+          <!-- Linkki toimii JS-scriptin avulla ks. koodi.js -->
+          <a id="hamburger-button" href="#">
+            <img id="hamburger-icon" src="images/Hamburger_icon.svg" alt="Valikko">
+          </a>
+        </li>
+        <li>
+          <a id="reservation" class="navbar-link" href="yhteydenotto.html#table">PÖYTÄVARAUS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
       <!-- piiloon menevä divi, jossa linkit -->
       <div id="collapsible-div" class="navbar-bottom">

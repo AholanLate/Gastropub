@@ -55,6 +55,20 @@ body{
     padding: 0;
 }
 
+/*lets try some flex in navbar*/
+.navbar-top{
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar-top-left{
+    flex: auto;
+}
+#navbar-top-right{
+    flex: auto;
+}
+
+
 #collapsible-div{
     width: 238px;
     height: 220px;
@@ -84,6 +98,24 @@ body{
     width: 28px;
     padding: 0;  
 }
+
+
+/* Navbar top left logo */
+#navbar-logo{
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    margin: 15px 0 0 25px;
+    filter: invert(94%) sepia(6%) saturate(209%) hue-rotate(76deg) brightness(108%) contrast(91%);
+}
+
+#navbar-logo-button{
+    border: none; 
+    width: 28px;
+    padding: 0;
+    margin: 0;
+}
+
 
 
 /* Navbar link settings */
@@ -299,6 +331,26 @@ article .article-right h2::after{
     border: 1px solid;
     border-top: none;
     padding-left: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 200%;
+    color:#0A0908;
+}
+
+.reservation-form::placeholder{
+    color:#0A0908;
+}
+
+.reservation-form.top-part{
+    border-top: 1px solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.reservation-form.bottom-part{
+    border-bottom-left-radius: 4px; 
+    border-bottom-right-radius: 4px; 
+    margin-bottom: 20px;
 }
 
 .reservation-form.group-size{
@@ -308,6 +360,7 @@ article .article-right h2::after{
 .feedback-form{
     width: 100%;
     border: 1px solid;
+    margin-bottom: 4px;
     height: 40px;
 }
 
@@ -315,6 +368,7 @@ article .article-right h2::after{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-top: 1px solid;
+    margin-bottom: 0px;
 }
 
 .bottom-part{
@@ -338,6 +392,7 @@ article .article-right h2::after{
 
 .contact-icon{
     height: 25px;
+    width: auto; 
     filter: invert(6%) sepia(28%) saturate(7500%) hue-rotate(340deg) brightness(91%) contrast(91%);
     margin-right: 8px;
 }
@@ -527,7 +582,6 @@ footer .col-md-4, footer .col-4{
         text-align: left;
         padding: 8px;
     }
-
     .feedback-form::placeholder{
         text-align: left;
     }
@@ -536,6 +590,10 @@ footer .col-md-4, footer .col-4{
 
     .navbar-top{
         background-color: rgba(10, 9, 8, 0);
+    }
+
+    #navbar-logo{
+        visibility: hidden;
     }
 
     #collapsible-div{
@@ -639,5 +697,4 @@ footer .col-md-4, footer .col-4{
         left: 50%;
         transform: translateX(-50%);
     }
-
 }
