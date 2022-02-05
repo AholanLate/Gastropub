@@ -45,6 +45,7 @@ body{
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 3px;
+    text-transform: uppercase;
     padding: 5px 15px;
 }
 
@@ -68,9 +69,10 @@ body{
     flex: auto;
 }
 
+
 #collapsible-div{
     width: 238px;
-    height: 220px;
+    height: 252px;
     float: right;
     display: none;
     margin: 0;
@@ -105,6 +107,7 @@ body{
     height: 28px;
     padding: 0;
     margin: 15px 0 0 25px;
+
 }
 
 #navbar-logo-button{
@@ -113,6 +116,7 @@ body{
     padding: 0;
     margin: 0;
 }
+
 
 
 /* Navbar link settings */
@@ -579,7 +583,7 @@ footer .col-md-4, footer .col-4{
         text-align: left;
         padding: 8px;
     }
-    
+
     .feedback-form::placeholder{
         text-align: left;
     }
@@ -623,7 +627,6 @@ footer .col-md-4, footer .col-4{
         padding: 8px 3px 11px 3px;
         margin: 0;
     }
-
 }
 
 @media only screen and (max-width: 550px){

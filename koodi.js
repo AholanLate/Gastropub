@@ -23,18 +23,18 @@ function updateNavbarStatus(isVisible){
     if(isMobile()){
       //Mobile and visible
       collapsibleDiv.style.display = "block";
-      collapsibleDiv.style.height = "260px";
-      navbarContent.style.marginBottom = "-385px";
-      navbarContent.style.height = "340px";
+      collapsibleDiv.style.height = "302px";
+      navbarContent.style.marginBottom = "-427px";
+      navbarContent.style.height = "382px";
       hiddenLink.style.display = "block";
     }
     else
     {
       //Desktop and visible
       collapsibleDiv.style.display = "block";
-      collapsibleDiv.style.height = "220px";
-      navbarContent.style.marginBottom = "-325px";
-      navbarContent.style.height = "280px";
+      collapsibleDiv.style.height = "262px";
+      navbarContent.style.marginBottom = "-367px";
+      navbarContent.style.height = "322px";
       hiddenLink.style.display = "none";
     }
   }
