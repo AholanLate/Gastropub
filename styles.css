@@ -85,6 +85,7 @@ body{
     padding: 0;  
 }
 
+
 /* Navbar link settings */
 
 .navbar-link{
@@ -308,18 +309,6 @@ article .article-right h2::after{
     color:#0A0908;
 }
 
-.reservation-form.top-part{
-    border-top: 1px solid;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.reservation-form.bottom-part{
-    border-bottom-left-radius: 4px; 
-    border-bottom-right-radius: 4px; 
-    margin-bottom: 20px;
-}
-
 .reservation-form.group-size{
     padding-left: 4px;
 }
@@ -327,17 +316,16 @@ article .article-right h2::after{
 .feedback-form{
     width: 100%;
     border: 1px solid;
-    margin-bottom: 4px;
     height: 40px;
 }
 
-.feedback-form.top-part{
+.top-part{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    margin-bottom: 0px;
+    border-top: 1px solid;
 }
 
-.feedback-form.bottom-part{
+.bottom-part{
     border-bottom-left-radius: 4px; 
     border-bottom-right-radius: 4px;
     border-top: none;
@@ -345,10 +333,10 @@ article .article-right h2::after{
 }
 
 #contact-comments{
-    height: 120px;
+    height: 200px;
     max-height: 200px;
-    min-height: 40px;
     border-radius: 4px;
+    margin-bottom: 3px;
 }
 
 .feedback-form::placeholder{
@@ -360,10 +348,10 @@ article .article-right h2::after{
     color:#0A0908;
 }
 
-#email-logo{
-    width: 35px; 
+.contact-icon{
+    height: 30px;
     filter: invert(6%) sepia(28%) saturate(7500%) hue-rotate(340deg) brightness(91%) contrast(91%);
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 
