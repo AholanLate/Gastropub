@@ -212,7 +212,7 @@ h1::after, h2::after{
 .ingressi{
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding: 0 25px !important;
 }
 
@@ -615,7 +615,7 @@ footer .col-md-4, footer .col-4{
         margin: 8px 8px 0 0;
     }
 
-    #reservation{
+    #reservation-link{
         display: none;
     }
 
