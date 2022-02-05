@@ -84,9 +84,8 @@ body{
 }
 
 .disabled-link{
-    color: rgba(242, 244, 243, 0.75);
-    border: 2px solid rgba(242, 244, 243, 0.75);
-    /* opacity: 75; */
+    pointer-events: none;
+    opacity: 0.3;
 }
 
 
