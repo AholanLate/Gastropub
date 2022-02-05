@@ -179,7 +179,7 @@ h1::after, h2::after{
     padding: 0 25px !important;
 }
 
-p, article .table{
+p, article .table, .reservation-form, .feedback-form::placeholder{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -299,14 +299,6 @@ article .article-right h2::after{
     border: 1px solid;
     border-top: none;
     padding-left: 8px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 200%;
-    color:#0A0908;
-}
-
-.reservation-form::placeholder{
-    color:#0A0908;
 }
 
 .reservation-form.group-size{
@@ -342,10 +334,6 @@ article .article-right h2::after{
 .feedback-form::placeholder{
     text-align: right;
     padding-right: 8px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 200%;
-    color:#0A0908;
 }
 
 .contact-icon{
@@ -536,6 +524,7 @@ footer .col-md-4, footer .col-4{
         text-align: left;
         padding: 8px;
     }
+
     .feedback-form::placeholder{
         text-align: left;
     }
