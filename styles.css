@@ -110,6 +110,7 @@ body{
 }
 
 #navbar-logo-button{
+    background-color: rgba(10, 9, 8, 0);
     border: none; 
     width: 28px;
     padding: 0;
