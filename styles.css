@@ -385,10 +385,10 @@ article .article-right h2::after{
 }
 
 #contact-comments{
-    height: 200px;
-    max-height: 200px;
+    height: 180px;
+    max-height: 180px;
     border-radius: 4px;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
 }
 
 .feedback-form::placeholder{
