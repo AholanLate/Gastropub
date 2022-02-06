@@ -36,7 +36,7 @@ body{
     overflow: auto;
 }
 
-.navbar-container a{
+.navbar-container a, .content-button{
     border: 2px solid #F2F4F3;
     color: #F2F4F3;
     text-decoration: none;
@@ -112,7 +112,6 @@ body{
     height: 28px;
     padding: 0;
     margin: 15px 0 0 25px;
-
 }
 
 #navbar-logo-button{
@@ -216,7 +215,7 @@ h1::after, h2::after{
     padding: 0 25px !important;
 }
 
-p, article .table, .reservation-form, .feedback-form::placeholder{
+p, article .table, .reservation-form, .reservation-form::placeholder, .feedback-form, .feedback-form::placeholder{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -230,17 +229,10 @@ p, article .table, .reservation-form, .feedback-form::placeholder{
 .content-button{
     border: 2px solid #49111C;
     color: #49111C;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    padding: 7px 15px;
+    text-align: center;
 }
 
 .content-button:hover{
-    border: 2px solid  #49111C;
     background-color: #49111C;
     color: #F2F4F3;
 }
@@ -307,7 +299,7 @@ article .article-right h2::after{
     flex-flow: row wrap;
 }
 
-.fix{
+.table-align-left{
     text-align: left;
 }
 
@@ -330,20 +322,16 @@ article .article-right h2::after{
 
 /* Yhteydenotto */
 
+::placeholder{
+    opacity: 1; /* For Firefox */
+}
+
 .reservation-form{
     width: 100%;
     height: 40px;
     border: 1px solid;
     border-top: none;
     padding-left: 8px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 200%;
-    color:#0A0908;
-}
-
-.reservation-form::placeholder{
-    color:#0A0908;
 }
 
 .reservation-form.top-part{
@@ -367,6 +355,12 @@ article .article-right h2::after{
     border: 1px solid;
     margin-bottom: 4px;
     height: 40px;
+}
+
+@supports (-moz-appearance:none){ /* For Firefox */
+    .feedback-form{
+        padding-right: 10px;
+    } 
 }
 
 .top-part{
@@ -705,4 +699,5 @@ footer .col-md-4, footer .col-4{
         left: 50%;
         transform: translateX(-50%);
     }
+
 }
