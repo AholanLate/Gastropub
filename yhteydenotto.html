@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imaginary Gastropub - Yhteydenotto</title>
+  <title>Imaginary Gastropub</title>
   <link rel="icon" type="image/x-icon" href="images/igp-dark.svg">
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,7 +28,7 @@
       <div class="navbar-top">
         
         <div id="navbar-top-left">
-          <a id="navbar-logo-button" href="index.html"><img id="navbar-logo" src="images/igp.svg" alt="Logo" title="Etusivu"></a>
+          <a id="navbar-logo-button" href="index.html"><img id="navbar-logo" src="images/igp.svg" alt="LOGO"></a>
         </div>
 
         <div id="navbar-top-right">
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li>
-              <a id="reservation-link" class="navbar-link" href="yhteydenotto.html#reservation">PÖYTÄVARAUS</a>
+              <a id="reservation" class="navbar-link" href="yhteydenotto.html#table">PÖYTÄVARAUS</a>
             </li>
           </ul>
         </div>
@@ -49,13 +49,12 @@
       <!-- piiloon menevä divi, jossa linkit -->
       <div id="collapsible-div" class="navbar-bottom">
         <ul>
-          <li><a class="navbar-link" href="index.html">Etusivu</a></li>
-          <li><a class="navbar-link" href="menu.html">Menu</a></li>
-          <li><a class="navbar-link" href="juomat.html">Juomat</a></li>
-          <li><a class="navbar-link" href="tarina.html">Meistä</a></li>
-          <li><a class="navbar-link" href="yhteydenotto.html">Yhteys</a></li>
-          <li><a id="hidden-link" class="navbar-link" href="yhteydenotto.html#reservation">Varaus</a></li>
-          <li><a class="navbar-link disabled-link" href="#">In English</a></li>
+          <li><a class="navbar-link" href="index.html">ETUSIVU</a></li>
+          <li><a class="navbar-link" href="menu.html">MENU</a></li>
+          <li><a class="navbar-link" href="juomat.html">JUOMAT</a></li>
+          <li><a class="navbar-link" href="tarina.html">MEISTÄ</a></li>
+          <li><a class="navbar-link" href="yhteydenotto.html">YHTEYS</a></li>
+          <li><a id="hidden-link" class="navbar-link" href="#table">VARAUS</a></li>
         </ul>
       </div>
     </nav>
@@ -94,13 +93,13 @@
           <img class="img-fluid" src="images/reservation.jpg" alt="Ihminen pöydän ääressä">
         </aside>
 
-        <article class="col-md-6" id="reservation">
+        <article class="col-md-6" id="table">
           <div class="textbox">
             <form>
               <h2>Varaa pöytä</h2>
-              <input type="text" name="name" id="reservation-name" class="reservation-form top-part" placeholder="Nimi" title="Nimi" required>
-              <input type="tel" name="phone" id="reservation-tel" class="reservation-form" placeholder="Puhelinnumero" title="Puhelinnumero" required>
-              <input type="email" name="email" id="reservation-email" class="reservation-form" placeholder="Sähköposti" title="Sähköposti" required>
+              <input type="text" name="name" id="reservation-name" class="reservation-form top-part" placeholder="Nimi" required>
+              <input type="tel" name="phone" id="reservation-tel" class="reservation-form" placeholder="Puhelinnumero" required>
+              <input type="email" name="email" id="reservation-email" class="reservation-form" placeholder="Sähköposti" required>
               <select class="reservation-form group-size" required>
                 <option selected value>Ryhmän koko</option>
                 <option value="1-2">1-2 henkilöä</option>
@@ -108,9 +107,9 @@
                 <option value="5-8">5-8 henkilöä</option>
                 <option value="8+">8+ henkilöä</option>
               </select>
-              <input type="date" class="reservation-form" name="päivämäärä" title="Päivämäärä" required>
-              <input type="time" class="reservation-form bottom-part" name="Kellonaika" title="Kellonaika" required>
-              <input class="content-button" type="submit" title="Varaa" value="VARAA">
+              <input type="date" class="reservation-form" required>
+              <input type="time" class="reservation-form bottom-part" required>
+              <input class="content-button" type="submit" value="VARAA">
             </form>
           </div>
         </article>
@@ -126,11 +125,12 @@
           <div class="textbox article-right">
             <h2>Jätä palautetta</h2>
             <form>
-              <input type="text" name="contact-name" id="contact-name" class="feedback-form top-part" placeholder="Nimi" title="Nimi" required>
-              <input type="email" name="contact-email" id="contact-email" class="feedback-form bottom-part" placeholder="Sähköposti" title="Sähköposti" required>
-              <textarea id="contact-comments" class="feedback-form" name="contact-comment" title="Kirjoita palautteesi tähän"
+              <input type="text" name="contact-name" id="contact-name" class="feedback-form top-part" placeholder="Nimi" required>
+              <input type="email" name="contact-email" id="contact-email" class="feedback-form bottom-part" placeholder="Sähköposti"
+                required>
+              <textarea id="contact-comments" class="feedback-form" name="contact-comment"
                 placeholder="Kirjoita palautteesi tähän..."></textarea>
-              <input class="content-button" type="submit" value="LÄHETÄ" title="Lähetä">
+              <input class="content-button" type="submit" value="LÄHETÄ">
             </form>
           </div>
         </article>
@@ -148,18 +148,18 @@
             <p>Iste perspiciatis dignissimos consequatur qui libero aperiam praesentium vel fugit suscipit!</p>
             
             <div class="table contact-table-margins">
-              <div><img class="contact-icon" src="images/location-icon.svg" alt="Osoite"></div> 
-              <div>Lorem ipsumin tie 123<br>12345 Lipsumila</div>
+              <img class="contact-icon" src="images/location-icon.svg" alt="location-icon">
+              Lorem ipsumin tie 123<br>12345 Lipsumila
             </div>
 
             <div class="table">
-              <div><img class="contact-icon" src="images/phone-icon.svg" alt="Puhelinumero"></div>
-              <div>(01) 123 4567</div>
+              <img class= "contact-icon" src="images/phone-icon.svg" alt="phone-icon">
+              (01) 123 4567
             </div>
 
             <div class="table">
-              <div><img class="contact-icon" src="images/mail-icon.svg" alt="Sähköpostiosoite"></div>
-              <div>email@imaginarygastropub.fi</div>
+              <img class= "contact-icon" src="images/mail-icon.svg" alt="phone-icon">
+              email@imaginarygastropub.fi
             </div>
             
           </div>
@@ -199,8 +199,7 @@
           </div>
           <div class="col-md-4 some">
             <h3>Sosiaalinen media</h3>
-            <p>
-              <a href="#"><img class="some-icon" src="images/icons8-facebook.svg" alt="Facebook"></a>
+            <p><a href="#"><img class="some-icon" src="images/icons8-facebook.svg" alt="Facebook"></a>
               <a href="#"><img class="some-icon" src="images/icons8-instagram.svg" alt="Instagram"></a>
               <a href="#"><img class="some-icon" src="images/icons8-twitter.svg" alt="Twitter"></a>
             </p>
