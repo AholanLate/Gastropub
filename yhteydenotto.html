@@ -24,10 +24,9 @@
   <div class="container">
 
     <!--NAVBAR-->
-    <!--NAVBAR-->
     <nav id="navbar-container" class="navbar-container">
       <div class="navbar-top">
-        
+
         <div id="navbar-top-left">
           <a id="navbar-logo-button" href="index.html"><img id="navbar-logo" src="images/igp.svg" alt="Logo" title="Etusivu"></a>
         </div>
@@ -41,7 +40,7 @@
               </a>
             </li>
             <li>
-              <a id="reservation-link" class="navbar-link" href="yhteydenotto.html#reservation">PÖYTÄVARAUS</a>
+              <a id="reservation-link" class="navbar-link" href="yhteydenotto.html#reservation">Pöytävaraus</a>
             </li>
           </ul>
         </div>
@@ -56,7 +55,7 @@
           <li><a class="navbar-link" href="tarina.html">Meistä</a></li>
           <li><a class="navbar-link" href="yhteydenotto.html">Yhteys</a></li>
           <li><a id="hidden-link" class="navbar-link" href="yhteydenotto.html#reservation">Varaus</a></li>
-          <li><a class="navbar-link disabled-link" href="#reservation">In English</a></li>
+          <li><a class="navbar-link disabled-link" href="#">In English</a></li>
         </ul>
       </div>
     </nav>
@@ -82,7 +81,7 @@
           <div class="ingressi">
             <h1>Yhteydenotto</h1>
             <p>Facilis voluptates qui rem quibusdam reprehenderit explicabo laborum adipisci iste, itaque distinctio
-              unde maiores vero et laboriosam ipsa porro tempore numquam asperiores. Asperiores, aspernatur laborum 
+              unde maiores vero et laboriosam ipsa porro tempore numquam asperiores. Asperiores, aspernatur laborum
               quis necessitatibus eos temporibus sed!
             </p>
           </div>
@@ -91,18 +90,19 @@
 
       <!--PÖYTÄVARAUS-->
       <div class="row">
-
         <aside class="col-md-6">
           <img class="img-fluid" src="images/reservation.jpg" alt="Ihminen pöydän ääressä">
         </aside>
-
         <article class="col-md-6" id="reservation">
           <div class="textbox">
             <form>
               <h2>Varaa pöytä</h2>
-              <input type="text" name="name" id="reservation-name" class="reservation-form top-part" placeholder="Nimi" required>
-              <input type="tel" name="phone" id="reservation-tel" class="reservation-form" placeholder="Puhelinnumero" required>
-              <input type="email" name="email" id="reservation-email" class="reservation-form" placeholder="Sähköposti" required>
+              <input type="text" name="name" id="reservation-name" class="reservation-form top-part" placeholder="Nimi" 
+                title="Nimi" required>
+              <input type="tel" name="phone" id="reservation-tel" class="reservation-form" placeholder="Puhelinnumero"
+                title="Puhelinnumero" required>
+              <input type="email" name="email" id="reservation-email" class="reservation-form" placeholder="Sähköposti"
+                title="Sähköposti" required>
               <select class="reservation-form group-size" required>
                 <option selected value>Ryhmän koko</option>
                 <option value="1-2">1-2 henkilöä</option>
@@ -110,9 +110,9 @@
                 <option value="5-8">5-8 henkilöä</option>
                 <option value="8+">8+ henkilöä</option>
               </select>
-              <input type="date" class="reservation-form" required>
-              <input type="time" class="reservation-form bottom-part" required>
-              <input class="content-button" type="submit" value="VARAA">
+              <input type="date" class="reservation-form" name="päivämäärä" title="Päivämäärä" required>
+              <input type="time" class="reservation-form bottom-part" name="Kellonaika" title="Kellonaika" required>
+              <input class="content-button" type="submit" title="Varaa" value="VARAA">
             </form>
           </div>
         </article>
@@ -128,12 +128,13 @@
           <div class="textbox article-right">
             <h2>Jätä palautetta</h2>
             <form>
-              <input type="text" name="contact-name" id="contact-name" class="feedback-form top-part" placeholder="Nimi" required>
-              <input type="email" name="contact-email" id="contact-email" class="feedback-form bottom-part" placeholder="Sähköposti"
-                required>
+              <input type="text" name="contact-name" id="contact-name" class="feedback-form top-part" placeholder="Nimi"
+                title="Nimi" required>
+              <input type="email" name="contact-email" id="contact-email" class="feedback-form bottom-part"
+                title="Sähköposti" placeholder="Sähköposti" required>
               <textarea id="contact-comments" class="feedback-form" name="contact-comment"
-                placeholder="Kirjoita palautteesi tähän..."></textarea>
-              <input class="content-button" type="submit" value="LÄHETÄ">
+                title="Kirjoita palautteesi tähän" placeholder="Kirjoita palautteesi tähän..."></textarea>
+              <input class="content-button" type="submit" value="LÄHETÄ" title="Lähetä">
             </form>
           </div>
         </article>
@@ -149,22 +150,22 @@
           <div class="textbox">
             <h2>Ota yhteyttä</h2>
             <p>Iste perspiciatis dignissimos consequatur qui libero aperiam praesentium vel fugit suscipit!</p>
-            
+
             <div class="table contact-table-margins">
-              <img class="contact-icon" src="images/location-icon.svg" alt="location-icon">
+              <img class="contact-icon" src="images/location-icon.svg" alt="Osoite">
               Lorem ipsumin tie 123<br>12345 Lipsumila
             </div>
 
             <div class="table">
-              <img class= "contact-icon" src="images/phone-icon.svg" alt="phone-icon">
+              <img class="contact-icon" src="images/phone-icon.svg" alt="Puhelinnumero">
               (01) 123 4567
             </div>
 
             <div class="table">
-              <img class= "contact-icon" src="images/mail-icon.svg" alt="phone-icon">
+              <img class="contact-icon" src="images/mail-icon.svg" alt="Sähköpostiosoite">
               email@imaginarygastropub.fi
             </div>
-            
+
           </div>
         </article>
       </div>
