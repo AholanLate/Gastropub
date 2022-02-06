@@ -230,6 +230,7 @@ p, article .table, .reservation-form, .reservation-form::placeholder, .feedback-
     border: 2px solid #49111C;
     color: #49111C;
     text-align: center;
+    padding: 7px 15px;
 }
 
 .content-button:hover{
@@ -304,19 +305,19 @@ article .article-right h2::after{
 }
 
 .table-cell-dish{
-    flex: 0 70%;
+    flex: 0 0 70%;
 }
 
 .table-cell-price{
     text-align: right;
-    flex: 0 30%;
+    flex: 0 0 30%;
 }
 
 .colspan-2{
     font-style: italic;
     font-size: 14px;
     padding: 0 0 15px 10px;
-    flex: 0 100%;
+    flex: 0 0 100%;
 }
 
 
