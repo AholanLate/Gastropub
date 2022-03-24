@@ -95,25 +95,53 @@
         </aside>
         <article class="col-md-6" id="reservation">
           <div class="textbox">
-            <form>
+
+            <form method="post" action="varaus.php" onsubmit="this.submit(); this.reset(); return false;">
               <h2>Varaa pöytä</h2>
-              <input type="text" name="name" id="reservation-name" class="reservation-form top-part" placeholder="Nimi" 
+
+              <input type="text" name="firstname" id="reservation-firstname" class="reservation-form top-part" placeholder="Etunimi" 
                 title="Nimi" required>
-              <input type="tel" name="phone" id="reservation-tel" class="reservation-form" placeholder="Puhelinnumero"
+              <input type="text" name="surname" id="reservation-surname" class="reservation-form" placeholder="Sukunimi"
+                title="Puhelinnumero" required>
+              <input type="tel" name="phonenumber" id="reservation-tel" class="reservation-form" placeholder="Puhelinnumero"
                 title="Puhelinnumero" required>
               <input type="email" name="email" id="reservation-email" class="reservation-form" placeholder="Sähköposti"
                 title="Sähköposti" required>
-              <select class="reservation-form group-size" required>
+              <select class="reservation-form group-size" name="participants" required>
                 <option selected value>Ryhmän koko</option>
-                <option value="1-2">1-2 henkilöä</option>
-                <option value="3-4">3-4 henkilöä</option>
-                <option value="5-8">5-8 henkilöä</option>
-                <option value="8+">8+ henkilöä</option>
+                <option value="1">1 henkilö</option>
+                <option value="2">2 henkilöä</option>
+                <option value="3">3 henkilöä</option>
+                <option value="4">4 henkilöä</option>
+                <option value="5">5 henkilöä</option>
+                <option value="6">6 henkilöä</option>
+                <option value="7">7 henkilöä</option>
+                <option value="8">8 henkilöä</option>
+                <option value="9">9 henkilöä</option>
+                <option value="10">10 henkilöä</option>
               </select>
-              <input type="date" class="reservation-form" name="päivämäärä" title="Päivämäärä" required>
-              <input type="time" class="reservation-form bottom-part" name="Kellonaika" title="Kellonaika" required>
-              <input class="content-button" type="submit" title="Varaa" value="VARAA">
+              <input type="date" class="reservation-form" name="date" title="Päivämäärä" required>
+              <!-- alkuperäinen: <input type="time" class="reservation-form bottom-part" name="time" title="Kellonaika" 
+                step="1800" min="16:00" max="22:00" required> 
+                alla uusi porrastetuilla kellonajoilla-->
+                 <select class="reservation-form bottom-part group-size"  name="time" title="Kellonaika" required>
+                  <option selected value>Kellonaika</option>
+                  <option value="16:00">16 : 00</option>
+                  <option value="16:30">16 : 30</option>
+                  <option value="17:00">17 : 00</option>
+                  <option value="17:30">17 : 30</option>
+                  <option value="18:00">18 : 00</option>
+                  <option value="18:30">18 : 30</option>
+                  <option value="19:00">19 : 00</option>
+                  <option value="19:30">19 : 30</option>
+                  <option value="20:00">20 : 00</option>
+                  <option value="20:30">20 : 30</option>
+                  <option value="21:00">21 : 00</option>
+                  </select>
+              <input class="content-button update-button" type="submit" value="Varaa">
+              <input class="content-button" type="button" value="Peru varaus" onclick="location.href = 'peruutus.html';">
             </form>
+
           </div>
         </article>
       </div>
@@ -127,14 +155,14 @@
         <article class="col-md-6">
           <div class="textbox article-right">
             <h2>Jätä palautetta</h2>
-            <form>
-              <input type="text" name="contact-name" id="contact-name" class="feedback-form top-part" placeholder="Nimi"
-                title="Nimi" required>
+            <form method="post" action="palaute.php" onsubmit="this.submit(); this.reset(); return false;">
+              <input type="text" name="contact-name" id="contact-name" class="feedback-form top-part" title="Nimi" 
+                placeholder="Nimi" maxlength="70" required>
               <input type="email" name="contact-email" id="contact-email" class="feedback-form bottom-part"
                 title="Sähköposti" placeholder="Sähköposti" required>
-              <textarea id="contact-comments" class="feedback-form" name="contact-comment"
-                title="Kirjoita palautteesi tähän" placeholder="Kirjoita palautteesi tähän..."></textarea>
-              <input class="content-button" type="submit" value="LÄHETÄ" title="Lähetä">
+              <textarea name="contact-comments" id="contact-comments" class="feedback-form" 
+                title="Kirjoita palautteesi tähän" placeholder="Kirjoita palautteesi tähän..." required></textarea>
+              <input class="content-button" type="submit" value="Lähetä" title="Lähetä">
             </form>
           </div>
         </article>
