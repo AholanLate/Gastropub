@@ -10,3 +10,5 @@ Frontend:
 
 Backend:
  Web-ohjelmointi ( 5op )
+
+Ulkoasun ja visuaalisen ilmeen suunnittelusta vastasi minjani 
