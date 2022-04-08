@@ -1,5 +1,5 @@
 # Gastropub
-Toteuttettu tekniikoilla: MySQL, PHP, JS, CSS, HTML5
+Toteutettu tekniikoilla: MySQL, PHP, JS, CSS, HTML5
 
 Projektiin osallistui 3 henkilöä.
 
@@ -11,4 +11,4 @@ Frontend:
 Backend:
  Web-ohjelmointi ( 5op )
 
-Ulkoasun ja visuaalisen ilmeen suunnittelusta vastasi minjani 
+Ulkoasun ja visuaalisen ilmeen suunnittelusta vastasi @minjani 
